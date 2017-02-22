@@ -1,0 +1,4677 @@
+/*
+Общие переменные
+*/
+/*
+Общие цвета для всех стилей
+*/
+/*
+Общие шрифты для всех стилей
+*/
+@font-face {
+  font-family: "Helvetica Neue LT W06_35 Thin";
+  src: url("../../fonts/default/1366414/950bd1f5-bc4c-4221-b5eb-f47555776261.eot?#iefix");
+  src: url("../../fonts/default/1366414/950bd1f5-bc4c-4221-b5eb-f47555776261.eot?#iefix") format("eot"), url("../../fonts/default/1366414/c4a58f61-9940-4a76-98c7-6de8ce8fe099.woff") format("woff"), url("../../fonts/default/1366414/f683964f-e644-441f-8df0-0ad29609753e.ttf") format("truetype"), url("../../fonts/default/1366414/d6821181-c8ac-4b85-bb8d-3e1c67f16a5e.svg#d6821181-c8ac-4b85-bb8d-3e1c67f16a5e") format("svg");
+}
+@font-face {
+  font-family: "Helvetica Neue LT W06_75 Bold";
+  src: url("../../fonts/default/1366347/57deecaf-8d98-4879-a2c3-fd4e39763792.eot?#iefix");
+  src: url("../../fonts/default/1366347/57deecaf-8d98-4879-a2c3-fd4e39763792.eot?#iefix") format("eot"), url("../../fonts/default/1366347/cb4a0bc9-8ebf-49d0-8141-f678590cdd7a.woff") format("woff"), url("../../fonts/default/1366347/dc5e824b-32f0-4eaf-96da-edc62194996b.ttf") format("truetype"), url("../../fonts/default/1366347/b171a7aa-9403-4e4c-aef3-f4ad65c836ba.svg#b171a7aa-9403-4e4c-aef3-f4ad65c836ba") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica Neue LT W06_55 Roman";
+  src: url("../../fonts/default/1366418/e0f8f15a-c0f6-4ddb-a86e-d0b3dd600c25.eot?#iefix");
+  src: url("../../fonts/default/1366418/e0f8f15a-c0f6-4ddb-a86e-d0b3dd600c25.eot?#iefix") format("eot"), url("../../fonts/default/1366418/990dea59-fcdd-461d-863d-3517e48e8ed0.woff") format("woff"), url("../../fonts/default/1366418/faf94d73-68f4-48a2-970f-f57530c211c9.ttf") format("truetype"), url("../../fonts/default/1366418/e4bb531b-d9fc-405e-88c3-1b34c22a8c50.svg#e4bb531b-d9fc-405e-88c3-1b34c22a8c50") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "HelveticaNeueW10-45Ligh";
+  src: url("../../fonts/default/777240/5b85c7cc-6ad4-4226-83f5-9d19e2974123.eot?#iefix");
+  src: url("../../fonts/default/777240/5b85c7cc-6ad4-4226-83f5-9d19e2974123.eot?#iefix") format("eot"), url("../../fonts/default/777240/bb85cc70-1239-4a3c-b9c7-4da74afaf032.woff2") format("woff2"), url("../../fonts/default/777240/835e7b4f-b524-4374-b57b-9a8fc555fd4e.woff") format("woff"), url("../../fonts/default/777240/2c694ef6-9615-473e-8cf4-d8d00c6bd973.ttf") format("truetype"), url("../../fonts/default/777240/3fc84193-a13f-4fe8-87f7-238748a4ac54.svg#3fc84193-a13f-4fe8-87f7-238748a4ac54") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'als_rublregular';
+  src: url('../../fonts/default/rouble-webfont.eot');
+  src: url('../../fonts/default/rouble-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/default/rouble-webfont.woff2') format('woff2'), url('../../fonts/default/rouble-webfont.woff') format('woff'), url('../../fonts/default/rouble-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../../fonts/default/glyphicons-halflings-regular.eot');
+  src: url('../../fonts/default/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../../fonts/default/glyphicons-halflings-regular.woff') format('woff'), url('../../fonts/default/glyphicons-halflings-regular.ttf') format('truetype'), url('../../fonts/default/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+@font-face {
+  font-family: 'CirceRounded';
+  font-weight: normal;
+  src: url('../../fonts/onlinedoctor/CirceRounded/CRO55__W.eot');
+  src: url('../../fonts/onlinedoctor/CirceRounded/CRO55__W.eot?#iefix') format('embedded-opentype'), url('../../fonts/onlinedoctor/CirceRounded/CRO55__W.woff2') format('woff2'), url('../../fonts/onlinedoctor/CirceRounded/CRO55__W.woff') format('woff'), url('../../fonts/onlinedoctor/CirceRounded/CRO55__W.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'CirceRounded';
+  font-weight: bold;
+  src: url('../../fonts/onlinedoctor/CirceRounded/3040E3_1_0.eot');
+  src: url('../../fonts/onlinedoctor/CirceRounded/3040E3_1_0.eot?#iefix') format('embedded-opentype'), url('../../fonts/onlinedoctor/CirceRounded/3040E3_1_0.woff2') format('woff2'), url('../../fonts/onlinedoctor/CirceRounded/3040E3_1_0.woff') format('woff'), url('../../fonts/onlinedoctor/CirceRounded/3040E3_1_0.ttf') format('truetype');
+}
+/*
+Файл с общими функциями
+*/
+/* .transition(all,2s); */
+/**
+Список времени для записи для календаря врача в интерфейсе пациента
+*/
+.badAccess .logo {
+  display: block;
+  height: 60px;
+  width: 303px;
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 140px;
+  background: url('../../images/onlinedoctor/logo.png') no-repeat center;
+}
+.badAccess .titleBadAccess {
+  text-align: center;
+}
+.badAccess .titleBadAccess h2 {
+  font-family: 'Helvetica Neue LT W06_35 Thin';
+  font-size: 56px;
+  color: #08c0de;
+  padding-top: 0;
+  margin: 20px 0 0 0;
+}
+.badAccess .errorType {
+  text-align: center;
+}
+.badAccess .errorType h3 {
+  font-family: 'Helvetica Neue LT W06_55 Roman';
+  font-size: 26px;
+  color: #08c0de;
+  margin: 10px 0 0 0;
+}
+.badAccess .description {
+  text-align: center;
+  padding: 15px 150px;
+}
+.badAccess .description span {
+  font-family: 'Helvetica Neue LT W06_55 Roman';
+  font-size: 20px;
+  color: #97a4a8;
+}
+.badAccess .titleBadAccess h2 {
+  font-family: 'CirceRounded';
+  color: #00aabe;
+}
+.badAccess .errorType h3 {
+  font-family: 'CirceRounded';
+  color: #00aabe;
+}
+.badAccess .description span {
+  font-family: 'CirceRounded';
+  font-weight: normal;
+}
+body.online-doctor {
+  /*
+        Кнопки
+    */
+}
+body.online-doctor .button-style {
+  display: inline-block;
+  vertical-align: middle;
+  min-width: 100px;
+  height: 39px;
+  line-height: 39px;
+  cursor: pointer;
+  font-family: 'CirceRounded';
+  font-size: 20px;
+  font-weight: bold;
+  color: inherit;
+  background-color: inherit;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  padding: 0 20px;
+  margin: 0 auto;
+  border: 0;
+  position: relative;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -o-border-radius: 20px 20px 20px 20px;
+  -khtml-border-radius: 20px 20px 20px 20px;
+  border-radius: 20px 20px 20px 20px;
+  behavior: url(../../css/PIE.htc);
+  -webkit-transition: background 0.2s ease-in-out 0s;
+  -moz-transition: background 0.2s ease-in-out 0s;
+  -ms-transition: background 0.2s ease-in-out 0s;
+  -o-transition: background 0.2s ease-in-out 0s;
+  transition: background 0.2s ease-in-out 0s;
+}
+body.online-doctor .button-style.btn-3,
+body.online-doctor .button-style.btn-4,
+body.online-doctor .button-style.btn-7 {
+  background-color: #f0505a;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+body.online-doctor .button-style.btn-3:hover,
+body.online-doctor .button-style.btn-4:hover,
+body.online-doctor .button-style.btn-7:hover {
+  background-color: #e01320;
+}
+body.online-doctor .button-style.btn-1,
+body.online-doctor .button-style.btn-2,
+body.online-doctor .button-style.btn-5,
+body.online-doctor .button-style.btn-6 {
+  background-color: #00aabe;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+body.online-doctor .button-style.btn-1:hover,
+body.online-doctor .button-style.btn-2:hover,
+body.online-doctor .button-style.btn-5:hover,
+body.online-doctor .button-style.btn-6:hover {
+  background-color: #006672;
+}
+body.online-doctor .button-style.full-width {
+  width: 100%;
+}
+body.online-doctor .button-style.no-border {
+  border: 0;
+}
+body.online-doctor .button-style.inactive,
+body.online-doctor .button-style.sending {
+  background-color: #97a4a8;
+  cursor: not-allowed;
+}
+body.online-doctor .button-style.inactive:hover,
+body.online-doctor .button-style.sending:hover {
+  background-color: #97a4a8;
+}
+body.online-doctor .button-style.small-button {
+  height: 32px;
+  font-size: 18px;
+  line-height: 32px;
+}
+body.online-doctor .button-style.submit-button {
+  font-size: 26px;
+  background-color: #08c0de;
+  color: #ffffff;
+  border-color: #ffffff;
+  width: 280px;
+  margin: 0 10px 30px;
+}
+body.online-doctor .button-style.submit-button:hover,
+body.online-doctor .button-style.submit-button:active {
+  background-color: #f196ce;
+}
+body.online-doctor button.close,
+body.online-doctor div.close,
+body.online-doctor .close-bar {
+  position: absolute;
+  margin: 0;
+  background: url('../../images/default/modal-close.png') no-repeat;
+  background-position: 0 0;
+  right: 20px;
+  top: 20px;
+  height: 14px;
+  width: 14px;
+  outline: none;
+}
+body.online-doctor button.close,
+body.online-doctor div.close,
+body.online-doctor .close-bar,
+body.online-doctor button.close:hover,
+body.online-doctor div.close:hover,
+body.online-doctor .close-bar:hover {
+  opacity: 1;
+}
+body.online-doctor button.close:hover,
+body.online-doctor div.close:hover,
+body.online-doctor .close-bar:hover {
+  background-position: -14px 0;
+}
+body.online-doctor *.button-od {
+  background: #ffffff;
+  display: inline-block;
+  padding: 0 15px;
+  height: 39px;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'CirceRounded';
+  line-height: 39px;
+  border: 0;
+  position: relative;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -o-border-radius: 20px 20px 20px 20px;
+  -khtml-border-radius: 20px 20px 20px 20px;
+  border-radius: 20px 20px 20px 20px;
+  behavior: url(../../css/PIE.htc);
+  cursor: pointer;
+  -webkit-transition: background 0.2s ease-in-out 0s;
+  -moz-transition: background 0.2s ease-in-out 0s;
+  -ms-transition: background 0.2s ease-in-out 0s;
+  -o-transition: background 0.2s ease-in-out 0s;
+  transition: background 0.2s ease-in-out 0s;
+}
+body.online-doctor *.button-od.small {
+  height: 32px;
+  font-size: 18px;
+  line-height: 32px;
+}
+body.online-doctor *.button-od.color-red {
+  background: #f0505a;
+  color: #ffffff;
+}
+body.online-doctor *.button-od.color-red:hover {
+  background: #e01320;
+}
+body.online-doctor *.button-od.color-red.empty-button {
+  border: 1px solid #f0505a;
+  color: #f0505a;
+}
+body.online-doctor *.button-od.color-red.empty-button:hover {
+  background: none;
+}
+body.online-doctor *.button-od.color-blue {
+  background: #00aabe;
+  color: #ffffff;
+}
+body.online-doctor *.button-od.color-blue:hover {
+  background: #006672;
+}
+body.online-doctor *.button-od.color-blue.empty-button {
+  border: 1px solid #00aabe;
+  color: #00aabe;
+}
+body.online-doctor *.button-od.color-blue.empty-button:hover {
+  background: none;
+}
+body.online-doctor *.button-od.empty-button {
+  background: none;
+  border-width: 1px;
+  border-style: solid;
+}
+body.online-doctor *.button-od.wide-button {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+body.online-doctor *.button-od-2 {
+  background: #ffffff;
+  display: inline-block;
+  padding: 0 15px;
+  width: 202px;
+  height: 39px;
+  text-align: center;
+  color: #000000;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: 'CirceRounded';
+  line-height: 39px;
+  border: 0;
+  position: relative;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -o-border-radius: 20px 20px 20px 20px;
+  -khtml-border-radius: 20px 20px 20px 20px;
+  border-radius: 20px 20px 20px 20px;
+  behavior: url(../../css/PIE.htc);
+  cursor: pointer;
+  -webkit-transition: background 0.2s ease-in-out 0s;
+  -moz-transition: background 0.2s ease-in-out 0s;
+  -ms-transition: background 0.2s ease-in-out 0s;
+  -o-transition: background 0.2s ease-in-out 0s;
+  transition: background 0.2s ease-in-out 0s;
+}
+body.online-doctor *.button-od-2.color-red {
+  background: #f0505a;
+  color: #ffffff;
+}
+body.online-doctor *.button-od-2.color-red:hover {
+  background: #e01320;
+}
+body.online-doctor *.button-od-2.color-red.empty-button {
+  border: 1px solid #f0505a;
+  color: #f0505a;
+}
+body.online-doctor *.button-od-2.color-red.empty-button:hover {
+  background: none;
+}
+body.online-doctor *.button-od-2.color-blue {
+  background: #00aabe;
+  color: #ffffff;
+}
+body.online-doctor *.button-od-2.color-blue:hover {
+  background: #006672;
+}
+body.online-doctor *.button-od-2.color-blue.empty-button {
+  border: 1px solid #00aabe;
+  color: #00aabe;
+}
+body.online-doctor *.button-od-2.color-blue.empty-button:hover {
+  background: none;
+}
+body.online-doctor *.blue-button {
+  background: #00aabe;
+  font-weight: bold;
+  font-family: 'CirceRounded';
+  font-size: 18px;
+  -webkit-transition: background 0.2s ease-in-out 0s;
+  -moz-transition: background 0.2s ease-in-out 0s;
+  -ms-transition: background 0.2s ease-in-out 0s;
+  -o-transition: background 0.2s ease-in-out 0s;
+  transition: background 0.2s ease-in-out 0s;
+}
+body.online-doctor *.blue-button:hover {
+  background: #006672;
+  font-family: 'CirceRounded';
+  font-size: 18px;
+}
+body.online-doctor *.blue-button:focus,
+body.online-doctor *.blue-button:active {
+  font-family: 'CirceRounded';
+  font-size: 18px;
+}
+body.online-doctor .rub {
+  display: inline-block;
+  text-indent: -4px;
+  font-weight: normal;
+}
+body.online-doctor .content {
+  width: 1164px;
+  margin: auto;
+  padding: 0 50px;
+}
+body.online-doctor .content.wide {
+  padding: 0 20px;
+}
+body.online-doctor .content.relative {
+  position: relative;
+}
+body.online-doctor .indent-4 {
+  text-indent: -4px;
+}
+body.online-doctor .line-styled {
+  background: #f0505a;
+  width: 100px;
+  height: 3px;
+  position: relative;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -o-border-radius: 3px 3px 3px 3px;
+  -khtml-border-radius: 3px 3px 3px 3px;
+  border-radius: 3px 3px 3px 3px;
+  behavior: url(../../css/PIE.htc);
+}
+body.online-doctor .pagination ul li {
+  display: inline-block;
+  vertical-align: middle;
+  width: 38px;
+  height: 38px;
+  text-align: center;
+  line-height: 2;
+}
+body.online-doctor .pagination ul li.page-nav {
+  background: url('../../images/onlinedoctor/arrows/blue-arrow.png');
+  background-size: 40px 37px;
+  width: 20px;
+  height: 37px;
+  opacity: 0.3;
+  cursor: pointer;
+  -webkit-transition: opacity 0.2s ease-in-out 0s;
+  -moz-transition: opacity 0.2s ease-in-out 0s;
+  -ms-transition: opacity 0.2s ease-in-out 0s;
+  -o-transition: opacity 0.2s ease-in-out 0s;
+  transition: opacity 0.2s ease-in-out 0s;
+}
+body.online-doctor .pagination ul li.page-nav:hover {
+  opacity: 1;
+}
+body.online-doctor .pagination ul li.page-nav.prev {
+  margin-right: 10px;
+}
+body.online-doctor .pagination ul li.page-nav.next {
+  background-position: -20px 0;
+  margin-left: 10px;
+}
+body.online-doctor .pagination ul li.page-nav.disabled {
+  cursor: not-allowed;
+}
+body.online-doctor .pagination ul li.page-nav a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: 0;
+  margin: 0;
+}
+body.online-doctor .pagination ul li.active {
+  background: #00aabe;
+  position: relative;
+  -webkit-border-radius: 50% 50% 50% 50%;
+  -moz-border-radius: 50% 50% 50% 50%;
+  -o-border-radius: 50% 50% 50% 50%;
+  -khtml-border-radius: 50% 50% 50% 50%;
+  border-radius: 50% 50% 50% 50%;
+  behavior: url(../../css/PIE.htc);
+}
+body.online-doctor .pagination ul li.active span {
+  color: #ffffff;
+  background: none;
+  border: 0;
+}
+body.online-doctor .pagination ul li a,
+body.online-doctor .pagination ul li span {
+  font-size: 24px;
+  padding: 0;
+  border: 0;
+  color: #000000;
+  float: none;
+  vertical-align: top;
+  margin-top: 10px;
+}
+body.online-doctor .calendar #calendar-cont,
+body.online-doctor .calendar-wrapper #calendar-cont {
+  padding-top: 30px;
+}
+body.online-doctor .calendar .calendar-body,
+body.online-doctor .calendar-wrapper .calendar-body {
+  float: none;
+  vertical-align: top;
+}
+body.online-doctor .calendar .calendar-body .ui-datepicker,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker {
+  border: 0;
+  vertical-align: middle;
+  width: 556px;
+}
+body.online-doctor .calendar .calendar-body .ui-datepicker a,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker a {
+  text-decoration: none;
+}
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-header,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-header {
+  color: #000000;
+  font-family: 'CirceRounded';
+  font-size: 34px;
+  font-weight: normal;
+  line-height: 60px;
+  height: 60px;
+  padding: 0 5px;
+}
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-header .ui-datepicker-prev,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-header .ui-datepicker-prev,
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-header .ui-datepicker-next,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-header .ui-datepicker-next {
+  background-image: url("/images/onlinedoctor/arrows/blue-arrow.png");
+  background-repeat: no-repeat;
+  background-size: 32px 30px;
+  cursor: pointer;
+  display: inline-block;
+  width: 16px;
+  height: 30px;
+  line-height: 595%;
+  overflow: hidden;
+  text-align: center;
+  margin: 15px 0;
+  opacity: 0.3;
+}
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-header .ui-datepicker-prev,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-header .ui-datepicker-prev {
+  float: left;
+  left: 30px;
+  position: relative;
+}
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-header .ui-datepicker-prev:hover,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-header .ui-datepicker-prev:hover {
+  background-position: 0 0;
+  opacity: 1;
+}
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-header .ui-datepicker-next,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-header .ui-datepicker-next {
+  background-position: -16px 0;
+  float: right;
+  position: relative;
+  right: 30px;
+}
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-header .ui-datepicker-next:hover,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-header .ui-datepicker-next:hover {
+  background-position: -16px 0;
+  opacity: 1;
+}
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-header .ui-datepicker-title,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-header .ui-datepicker-title {
+  text-align: center;
+}
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-calendar,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-calendar {
+  width: 100%;
+  border-top: 1px dotted #00aabe;
+  border-collapse: separate;
+  position: relative;
+}
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-calendar::before,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-calendar::before {
+  content: "";
+  width: 100%;
+  border-top: 1px dotted #00aabe;
+  position: absolute;
+}
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-calendar thead,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-calendar thead {
+  border: 0;
+}
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-calendar thead th,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-calendar thead th {
+  color: #000000;
+  font-family: 'CirceRounded';
+  font-size: 16px;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 52px;
+  padding-top: 0;
+}
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-calendar tbody tr,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-calendar tbody tr {
+  border-bottom: 0;
+}
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-calendar tbody tr:first-child td,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-calendar tbody tr:first-child td {
+  padding-top: 12px;
+}
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-calendar tbody tr:first-child td .hasScheduled,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-calendar tbody tr:first-child td .hasScheduled {
+  top: 16px;
+}
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-calendar tbody tr td,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-calendar tbody tr td {
+  padding: 0;
+  border-right: 0;
+  text-align: center;
+}
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-calendar tbody tr td.highlight a,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-calendar tbody tr td.highlight a {
+  background: #e0e0e0;
+  color: #f196ce;
+}
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-calendar tbody tr td span,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-calendar tbody tr td span,
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-calendar tbody tr td a,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-calendar tbody tr td a {
+  color: #000000;
+  display: inline-block;
+  font-family: 'CirceRounded';
+  font-size: 24px;
+  font-weight: normal;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  width: 78px;
+  position: relative;
+}
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-calendar tbody tr td .hasScheduled,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-calendar tbody tr td .hasScheduled {
+  display: none;
+  position: absolute;
+  top: 4px;
+  right: 5px;
+  width: 20px;
+  height: 20px;
+  background: url('../../images/default/state-sign-icons.png') no-repeat;
+}
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-calendar tbody tr td.user-has-consult .hasScheduled,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-calendar tbody tr td.user-has-consult .hasScheduled {
+  display: block;
+}
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-calendar tbody tr td.passed-day .hasScheduled,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-calendar tbody tr td.passed-day .hasScheduled {
+  display: none;
+}
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-calendar tbody tr td:last-child,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-calendar tbody tr td:last-child {
+  border-right: 0;
+}
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-calendar tbody tr:last-child,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-calendar tbody tr:last-child {
+  border-bottom: 0;
+}
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-calendar tbody tr:last-child .ui-state-active,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-calendar tbody tr:last-child .ui-state-active {
+  margin-bottom: 0;
+}
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-calendar tbody td:first-child .ui-state-active,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-calendar tbody td:first-child .ui-state-active {
+  background: #ffffff;
+  width: 29px;
+  margin-left: 0;
+}
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-calendar tbody td:last-child .ui-state-active,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-calendar tbody td:last-child .ui-state-active {
+  background: #ffffff;
+  width: 29px;
+  margin-right: 0;
+}
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-calendar tbody .ui-state-active,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-calendar tbody .ui-state-active {
+  background: #ffffff;
+  color: #333333;
+  position: relative;
+  text-shadow: none;
+}
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-calendar tbody .ui-state-default,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-calendar tbody .ui-state-default {
+  font-size: 24px;
+  color: #00aabe;
+}
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-calendar tbody .ui-datepicker-unselectable .ui-state-default,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-calendar tbody .ui-datepicker-unselectable .ui-state-default {
+  background: none repeat scroll 0 0 #ffffff;
+  color: #000000;
+  font-family: 'CirceRounded';
+  font-weight: normal;
+}
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-calendar td,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-calendar td {
+  position: relative;
+}
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-calendar td a,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-calendar td a {
+  background-color: #ffffff;
+}
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-calendar td:first-child .ui-state-active,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-calendar td:first-child .ui-state-active {
+  width: 100% !important;
+}
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-calendar td:last-child .ui-state-active,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-calendar td:last-child .ui-state-active {
+  width: 78px !important;
+}
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-calendar td.ui-datepicker-today,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-calendar td.ui-datepicker-today {
+  border-bottom: none;
+}
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-calendar td.ui-datepicker-today a,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-calendar td.ui-datepicker-today a {
+  font-family: 'CirceRounded';
+  font-weight: bold;
+  border-bottom: none;
+}
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-calendar td.ui-datepicker-unselectable a.ui-state-hover,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-calendar td.ui-datepicker-unselectable a.ui-state-hover,
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-calendar td.ui-datepicker-unselectable span.ui-state-hover,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-calendar td.ui-datepicker-unselectable span.ui-state-hover,
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-calendar td.ui-datepicker-unselectable .ui-state-active,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-calendar td.ui-datepicker-unselectable .ui-state-active {
+  border: none;
+  line-height: 50px;
+}
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-calendar td.ui-datepicker-other-month a.ui-state-default,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-calendar td.ui-datepicker-other-month a.ui-state-default,
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-calendar td.ui-datepicker-other-month span.ui-state-default,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-calendar td.ui-datepicker-other-month span.ui-state-default {
+  border: none;
+  background-color: #ffffff;
+  color: #999999;
+  font-family: 'CirceRounded';
+  font-weight: normal;
+}
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-calendar td.not-working-day a,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-calendar td.not-working-day a {
+  color: #000000;
+  cursor: not-allowed;
+}
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-calendar td.not-working-day.passed-day a,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-calendar td.not-working-day.passed-day a {
+  background-color: #fafafa;
+}
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-calendar td.user-has-consult a.ui-state-default,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-calendar td.user-has-consult a.ui-state-default {
+  color: #47d68e;
+}
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-calendar td.user-has-consult.passed-day a.ui-state-default,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-calendar td.user-has-consult.passed-day a.ui-state-default {
+  border: none;
+}
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-calendar td.all-slots-busy a.ui-state-default,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-calendar td.all-slots-busy a.ui-state-default {
+  color: #e8503e;
+}
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-calendar td a.ui-state-hover,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-calendar td a.ui-state-hover {
+  font-family: 'CirceRounded';
+  font-size: 24px;
+}
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-calendar td a.ui-state-active,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-calendar td a.ui-state-active {
+  border: 2px solid #00aabe;
+  font-family: 'CirceRounded';
+  font-size: 24px;
+  line-height: 46px;
+}
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-calendar td .schedules-count,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-calendar td .schedules-count {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  line-height: 15px;
+  height: 15px;
+  width: 15px;
+  text-align: center;
+  background-color: red;
+  border-radius: 50%;
+  display: none;
+  color: white;
+}
+body.online-doctor .calendar .calendar-body .ui-datepicker .ui-datepicker-calendar td .schedules-count.visible,
+body.online-doctor .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-calendar td .schedules-count.visible {
+  display: block;
+}
+body.online-doctor .calendar .calendar-body .show-all,
+body.online-doctor .calendar-wrapper .calendar-body .show-all {
+  width: 250px;
+  text-align: center;
+  margin: 10px auto;
+  background-color: #f0f0f0;
+  border: 1px solid #08c0de;
+  border-radius: 20px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  color: #08c0de;
+  cursor: pointer;
+}
+body.online-doctor .calendar .calendar-body .show-all:hover,
+body.online-doctor .calendar-wrapper .calendar-body .show-all:hover {
+  background-color: #fafafa;
+}
+body.online-doctor .dayDetailed {
+  width: 470px;
+  height: auto;
+  vertical-align: top;
+  border: 0;
+  margin-top: 1px;
+  margin-left: 0;
+}
+body.online-doctor .dayDetailed .header {
+  font-size: 34px;
+  font-weight: normal;
+  border-bottom: 1px dotted #00aabe;
+}
+body.online-doctor .dayDetailed .header .date {
+  font-family: 'CirceRounded';
+}
+body.online-doctor .dayDetailed .hoursDiv {
+  padding: 0;
+}
+body.online-doctor .dayDetailed .hoursDiv [class|="column"] {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+}
+body.online-doctor .dayDetailed .hoursDiv [class|="column"]:empty {
+  display: none;
+}
+body.online-doctor .dayDetailed .hoursDiv [class|="column"]:first-child {
+  margin-right: 34px;
+}
+body.online-doctor .dayDetailed .hoursDiv .period {
+  font-family: 'CirceRounded';
+  border-bottom: 1px dotted #00aabe;
+  height: 53px;
+  line-height: 54px;
+  padding: 0 10px;
+}
+body.online-doctor .dayDetailed .hoursDiv .period > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+body.online-doctor .dayDetailed .hoursDiv .period .time-wrapper {
+  width: 100px;
+}
+body.online-doctor .dayDetailed .hoursDiv .period .time {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 22px;
+  color: #000000;
+  float: none;
+  padding-left: 0;
+}
+body.online-doctor .dayDetailed .hoursDiv .period .actions {
+  font-size: 18px;
+  font-weight: bold;
+  width: 85px;
+  float: none;
+  padding-right: 0;
+  margin-right: 0;
+}
+body.online-doctor .dayDetailed .hoursDiv .period .actions:hover {
+  text-decoration: none;
+}
+body.online-doctor .dayDetailed .hoursDiv .period .actions .tick {
+  display: block;
+  text-decoration: underline;
+  color: #000000;
+}
+body.online-doctor .dayDetailed .hoursDiv .period .actions .tick:hover {
+  color: #00aabe;
+}
+body.online-doctor .dayDetailed .hoursDiv .period .infoCont {
+  float: none;
+  height: 22px;
+  line-height: 0;
+  display: none;
+}
+body.online-doctor .dayDetailed .hoursDiv .period .infoCont .ico {
+  margin: 0;
+  display: block;
+}
+body.online-doctor .dayDetailed .hoursDiv .period.hasConsult .tick {
+  font-family: 'CirceRounded';
+  text-decoration: none;
+  color: #47d68e;
+}
+body.online-doctor .dayDetailed .hoursDiv .period.hasConsult .tick:hover {
+  color: #47d68e;
+}
+body.online-doctor .dayDetailed .hoursDiv .period.hasConsult.doctBusy .tick {
+  color: #47d68e;
+}
+body.online-doctor .dayDetailed .hoursDiv .period.hasConsult.doctBusy .tick:hover {
+  color: #47d68e;
+}
+body.online-doctor .dayDetailed .hoursDiv .period.hasConsultUser .tick {
+  color: #999999;
+  cursor: default;
+  text-decoration: none;
+}
+body.online-doctor .dayDetailed .hoursDiv .period.hasConsultUser .tick:hover {
+  color: #999999;
+}
+body.online-doctor .dayDetailed .hoursDiv .period.doctBusy .tick {
+  color: #999999;
+  text-decoration: none;
+}
+body.online-doctor .dayDetailed .hoursDiv .period.doctBusy .tick:hover {
+  color: #999999;
+}
+body.online-doctor .dayDetailed .hoursDiv .period.justify::after {
+  display: inline-block;
+}
+body.online-doctor .dayDetailed .hoursDiv .no-periods {
+  font-size: 18px;
+  line-height: 54px;
+}
+body.online-doctor .dayDetailed .hoursDiv .clearFloat {
+  display: none;
+}
+body.online-doctor #orderChosenWrapper .title-wrapper {
+  padding: 0;
+  border: 0;
+}
+body.online-doctor #orderChosenWrapper .filters-wrapper {
+  font-weight: normal;
+  padding: 0;
+}
+body.online-doctor #orderChosenWrapper .filters-wrapper .tab-filter {
+  font-size: 18px;
+  line-height: 22px;
+}
+body.online-doctor #orderChosenWrapper .filters-wrapper .tab-filter > * {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 30px;
+  color: #000000;
+}
+body.online-doctor #orderChosenWrapper .filters-wrapper .tab-filter > * > a {
+  color: inherit;
+}
+body.online-doctor #orderChosenWrapper .filters-wrapper .tab-filter > *.selected,
+body.online-doctor #orderChosenWrapper .filters-wrapper .tab-filter > *:hover {
+  color: #00aabe;
+  border-bottom: 0;
+}
+body.online-doctor #orderChosenWrapper .filters-wrapper .dropdown-filter .dropdown-selector {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+body.online-doctor #orderChosenWrapper .filters-wrapper .dropdown-filter .dropdown-selector.active > ul {
+  display: block;
+}
+body.online-doctor #orderChosenWrapper .filters-wrapper .dropdown-filter .dropdown-selector.active .list-label::after {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+body.online-doctor #orderChosenWrapper .filters-wrapper .dropdown-filter .dropdown-selector .list-label {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 22px;
+  cursor: pointer;
+}
+body.online-doctor #orderChosenWrapper .filters-wrapper .dropdown-filter .dropdown-selector .list-label::after {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 9px;
+  margin-left: 2px;
+  background: url('../../images/onlinedoctor/arrows/dropdown.png') no-repeat;
+}
+body.online-doctor #orderChosenWrapper .filters-wrapper .dropdown-filter .dropdown-selector .list-label .border-wrap {
+  border-bottom: 1px dashed;
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 412px;
+}
+body.online-doctor #orderChosenWrapper .filters-wrapper .dropdown-filter .dropdown-selector .list-label .border-wrap .profession-name {
+  text-transform: lowercase;
+}
+body.online-doctor #orderChosenWrapper .filters-wrapper .dropdown-filter .dropdown-selector > ul {
+  display: none;
+  background-color: #ffffff;
+  top: 30px;
+  right: 0;
+  font-size: 15px;
+  padding: 16px 0;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -o-border-radius: 20px 20px 20px 20px;
+  -khtml-border-radius: 20px 20px 20px 20px;
+  border-radius: 20px 20px 20px 20px;
+  behavior: url(../../css/PIE.htc);
+  position: absolute;
+  min-width: 220px;
+  z-index: 100;
+  line-height: 30px;
+}
+body.online-doctor #orderChosenWrapper .filters-wrapper .dropdown-filter .dropdown-selector > ul > li {
+  cursor: pointer;
+  padding: 0 20px 0 40px;
+  white-space: nowrap;
+  position: relative;
+}
+body.online-doctor #orderChosenWrapper .filters-wrapper .dropdown-filter .dropdown-selector > ul > li:hover {
+  background: #e9f9ff;
+}
+body.online-doctor #orderChosenWrapper .filters-wrapper .dropdown-filter .dropdown-selector > ul > li .item.selected::before {
+  content: "";
+  background: url('../../images/default/selected-sign-icon.png') no-repeat;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 7px;
+  left: 16px;
+}
+body.online-doctor #orderChosenWrapper .doctors-list .doctor-row {
+  border-bottom: 1px dotted #00aabe;
+  line-height: 0;
+  padding: 34px 0 30px;
+}
+body.online-doctor #orderChosenWrapper .doctors-list .doctor-row.last-child {
+  border-bottom: 0;
+}
+body.online-doctor #orderChosenWrapper .doctors-list .doctor-row .doctor-info {
+  text-align: left;
+  vertical-align: top;
+}
+body.online-doctor #orderChosenWrapper .doctors-list .doctor-row .doctor-info > div {
+  display: inline-block;
+  vertical-align: top;
+}
+body.online-doctor #orderChosenWrapper .doctors-list .doctor-row .doctor-info .about-doctor {
+  width: 388px;
+  font-weight: normal;
+}
+body.online-doctor #orderChosenWrapper .doctors-list .doctor-row .doctor-info .about-doctor .name {
+  font-size: 38px;
+  line-height: 40px;
+  color: #000000;
+  margin-bottom: 12px;
+  -webkit-transition: color 0.2s ease-in-out 0s;
+  -moz-transition: color 0.2s ease-in-out 0s;
+  -ms-transition: color 0.2s ease-in-out 0s;
+  -o-transition: color 0.2s ease-in-out 0s;
+  transition: color 0.2s ease-in-out 0s;
+}
+body.online-doctor #orderChosenWrapper .doctors-list .doctor-row .doctor-info .about-doctor .name a {
+  color: inherit;
+}
+body.online-doctor #orderChosenWrapper .doctors-list .doctor-row .doctor-info .about-doctor .name:hover {
+  color: #00aabe;
+}
+body.online-doctor #orderChosenWrapper .doctors-list .doctor-row .doctor-info .about-doctor .profession {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 22px;
+}
+body.online-doctor #orderChosenWrapper .doctors-list .doctor-row .doctor-info .about-doctor .profession a {
+  color: inherit;
+}
+body.online-doctor #orderChosenWrapper .doctors-list .doctor-row .doctor-info .about-doctor .grade {
+  font-size: 15px;
+  line-height: 20px;
+  margin-top: 14px;
+}
+body.online-doctor #orderChosenWrapper .doctors-list .doctor-row .doctor-info .about-doctor .line {
+  background: #f0505a;
+  width: 99px;
+  height: 3px;
+  position: relative;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -o-border-radius: 20px 20px 20px 20px;
+  -khtml-border-radius: 20px 20px 20px 20px;
+  border-radius: 20px 20px 20px 20px;
+  behavior: url(../../css/PIE.htc);
+  margin: 22px 0;
+}
+body.online-doctor #orderChosenWrapper .doctors-list .doctor-row .doctor-info .about-doctor .description-wrapper {
+  font-size: 15px;
+  line-height: 18px;
+}
+body.online-doctor #orderChosenWrapper .doctors-list .doctor-row .doctor-info .about-doctor .description-wrapper p {
+  line-height: 20px;
+}
+body.online-doctor #orderChosenWrapper .doctors-list .doctor-row .doctor-info .about-doctor .description-wrapper .more-link {
+  font-size: 12px;
+  font-style: italic;
+  color: inherit;
+}
+body.online-doctor #orderChosenWrapper .doctors-list .doctor-row .doctor-info .about-doctor .description-wrapper .more-link:hover {
+  color: #00aabe;
+}
+body.online-doctor #orderChosenWrapper .doctors-list .doctor-row .doctor-info .about-doctor .doctors-type {
+  font-size: 19px;
+  font-weight: bold;
+  padding: 0 20px;
+  height: 32px;
+  display: inline-block;
+  position: relative;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -o-border-radius: 20px 20px 20px 20px;
+  -khtml-border-radius: 20px 20px 20px 20px;
+  border-radius: 20px 20px 20px 20px;
+  behavior: url(../../css/PIE.htc);
+  margin-top: 15px;
+  text-align: center;
+  line-height: 28px;
+}
+body.online-doctor #orderChosenWrapper .doctors-list .doctor-row .doctor-info .about-doctor .doctors-type.consult {
+  background: rgba(0, 170, 190, 0.07);
+  color: #00aabe;
+}
+body.online-doctor #orderChosenWrapper .doctors-list .doctor-row .doctor-info .about-doctor .doctors-type.expert {
+  background: rgba(240, 80, 90, 0.07);
+  color: #f0505a;
+}
+body.online-doctor #orderChosenWrapper .doctors-list .doctor-row .consult-info {
+  width: 210px;
+  vertical-align: top;
+}
+body.online-doctor #orderChosenWrapper .doctors-list .doctor-row .consult-info .record-block {
+  line-height: 0;
+  margin-bottom: 20px;
+}
+body.online-doctor #orderChosenWrapper .doctors-list .doctor-row .consult-info .record-block .title {
+  font-size: 18px;
+  font-weight: normal;
+  color: inherit;
+  line-height: 22px;
+  text-align: left;
+  margin-bottom: 18px;
+}
+body.online-doctor #orderChosenWrapper .doctors-list .doctor-row .consult-info .record-block.pay .title {
+  margin-bottom: 8px;
+}
+body.online-doctor #orderChosenWrapper .doctors-list .doctor-row .consult-info .record-block .price-value {
+  line-height: 1;
+  margin-bottom: 20px;
+  font-size: 39px;
+  color: #00aabe;
+}
+body.online-doctor #orderChosenWrapper .show-more-wrapper {
+  padding: 40px 0;
+}
+body.online-doctor .avatar-block {
+  width: 260px;
+  margin-right: 30px;
+}
+body.online-doctor .avatar-block .image-content {
+  width: 100%;
+  height: 260px;
+  border: 1px solid #edf0f1;
+  overflow: hidden;
+  text-align: center;
+}
+body.online-doctor .avatar-block .image-content a {
+  display: block;
+}
+body.online-doctor .avatar-block .image-content img {
+  width: 100%;
+  height: auto;
+}
+body.online-doctor .avatar-block .rating-stars {
+  line-height: 0;
+  margin-top: 16px;
+}
+body.online-doctor .avatar-block .rating-stars > span {
+  background: url('../../images/onlinedoctor/big_stars.png') no-repeat;
+  background-position: -27px 0;
+  width: 23px;
+  height: 22px;
+  margin-right: 3px;
+  display: inline-block;
+  vertical-align: middle;
+}
+body.online-doctor .avatar-block .rating-stars > span.fill {
+  background-position: 0 0;
+}
+body.online-doctor .codewordsWrapper .table {
+  display: table;
+}
+body.online-doctor .codewordsWrapper .table .row {
+  display: table-row;
+  height: 100%;
+}
+body.online-doctor .codewordsWrapper .table .row .cell {
+  display: table-cell;
+  height: 100%;
+  vertical-align: top;
+}
+body.online-doctor .codewordsWrapper .partnersWrapper-one {
+  margin-top: 75px;
+}
+body.online-doctor .codewordsWrapper .partnersWrapper-one:first-child {
+  margin-top: 40px;
+}
+body.online-doctor .codewordsWrapper .partnersWrapper-one .partner-description {
+  font-weight: normal;
+  font-family: 'CirceRounded';
+  line-height: 24px;
+}
+body.online-doctor .codewordsWrapper .partnersWrapper-one .partner-description .title {
+  font-size: 24px;
+  margin: 0 0 20px;
+}
+body.online-doctor .codewordsWrapper .partnersWrapper-one .partner-description .about {
+  font-size: 18px;
+}
+body.online-doctor .codewordsWrapper .partnersWrapper-one .partner-logo {
+  width: auto;
+  padding-right: 30px;
+}
+body.online-doctor .codewordsWrapper .partnersWrapper-one .partner-logo .logo-container {
+  width: 260px;
+  text-align: center;
+}
+body.online-doctor .codewordsWrapper .partnersWrapper-one .partner-logo .logo-container img {
+  max-width: 100%;
+}
+body.online-doctor .codewordsWrapper .partnersWrapper-one .buttons-wrapper {
+  margin-top: 20px;
+}
+body.online-doctor .codewordsWrapper .partnersWrapper-one .buttons-wrapper .description {
+  width: 500px;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 24px;
+  text-align: left;
+}
+body.online-doctor .codewordsWrapper .partnersWrapper-one .partnersWrapper-one-text {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: 'HelveticaNeueW10-45Ligh', sans-serif;
+  color: #000000;
+  padding: 32px 0;
+}
+body.online-doctor .codewordsWrapper .partnersWrapper-one .row.codeword {
+  background: #e0f5f8;
+}
+body.online-doctor .codewordsWrapper .partnersWrapper-one .row.codeword.selected {
+  background: #c4ebf0;
+}
+body.online-doctor .codewordsWrapper .partnersWrapper-one .row.codeword .cell {
+  border-bottom: 3px solid #ffffff;
+}
+body.online-doctor .codewordsWrapper .partnersWrapper-one .row.codeword .cell:nth-child(1) {
+  width: 354px;
+}
+body.online-doctor .codewordsWrapper .partnersWrapper-one .row.codeword .cell:nth-child(2) {
+  width: 396px;
+  border-right: 3px solid #ffffff;
+  border-left: 3px solid #ffffff;
+}
+body.online-doctor .codewordsWrapper .partnersWrapper-one .row.codeword .cell.codeword-lifetime {
+  font-size: 18px;
+  font-weight: normal;
+  color: #333333;
+  position: relative;
+}
+body.online-doctor .codewordsWrapper .partnersWrapper-one .row.codeword .cell.codeword-lifetime span {
+  display: block;
+}
+body.online-doctor .codewordsWrapper .partnersWrapper-one .cell.add-button-wrapper,
+body.online-doctor .codewordsWrapper .partnersWrapper-one .cell.one-form-date {
+  text-align: right;
+  white-space: nowrap;
+}
+body.online-doctor .one-form-line > .cell {
+  border-top: 0;
+  padding: 25px;
+}
+body.online-doctor .one-form-line .codeword-title {
+  display: inline-block;
+  width: 340px;
+  overflow: hidden;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 30px;
+}
+body.online-doctor .one-form-line .codeword-title .glyphicon {
+  font-size: 17px;
+  margin-left: 4px;
+  cursor: help;
+  top: -5px;
+  color: #8c8c8c;
+}
+body.online-doctor .one-form-line .codeword-description {
+  display: inline-block;
+  width: 340px;
+  overflow: hidden;
+  font-size: 18px;
+  font-weight: normal;
+  color: #999999;
+}
+body.online-doctor .one-form-numb-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+  width: 250px;
+}
+body.online-doctor .one-form-numb-wrapper .one-form-numb {
+  font-family: 'CirceRounded';
+  font-size: 22px;
+  font-weight: bold;
+  width: 100%;
+  height: 26px;
+  padding: 0 0 0 10px;
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+body.online-doctor .one-form-name {
+  font-family: 'Helvetica Neue LT W06_55 Roman', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  width: 445px;
+  display: inline-block;
+}
+body.online-doctor .one-form-date {
+  font-family: 'HelveticaNeueW10-45Ligh', sans-serif;
+  color: #97a4a8;
+  display: inline-block;
+}
+body.online-doctor .one-form-delete-wrapper {
+  padding-left: 0;
+  width: 14px;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+body.online-doctor .one-form-delete-wrapper .one-form-delete {
+  background: url('../../images/default/modal-close.png') no-repeat;
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+  margin-top: 0;
+}
+body.online-doctor .form-wrap-content-yes .one-form-date,
+body.online-doctor .form-wrap-content-yes .one-form-date-val {
+  text-align: right;
+}
+body.online-doctor .form-wrap-content-yes .one-form-delete {
+  margin-top: 0px;
+  top: 2px;
+}
+body.online-doctor .one-form-p-info {
+  padding: 0 45px;
+  font-family: 'Helvetica Neue LT W06_55 Roman', sans-serif;
+  font-size: 11px;
+  color: #97a4a8;
+}
+body.online-doctor .one-form-last-block {
+  padding: 28px 0 38px;
+}
+body.online-doctor .one-form-button {
+  font-family: 'HelveticaNeueW10-45Ligh', sans-serif;
+  font-size: 19px;
+  width: 290px;
+  height: 41px;
+  margin-right: 0;
+  color: #08c0de;
+  border: 1px solid #08c0de;
+  border-radius: 20px;
+  background: #ffffff;
+  line-height: 1;
+}
+body.online-doctor .one-form-separ-wrapper {
+  width: 21px;
+}
+body.online-doctor .one-form-separ-wrapper .one-form-separ {
+  height: 100%;
+  display: inline-block;
+  width: 1px;
+  background: #f0f0f0;
+  margin-right: 20px;
+  top: 3px;
+  padding: 0;
+}
+body.online-doctor .one-form-button:hover {
+  background: #08c0de;
+  color: #ffffff;
+}
+body.online-doctor .partnersWrapper-one-form table {
+  width: 100%;
+}
+body.online-doctor .one-radio {
+  margin-top: 30px;
+}
+body.online-doctor .one-radio label {
+  background: url('../../images/onlinedoctor/radio-buttons.svg') no-repeat;
+  background-size: 52px 26px;
+  border: 0;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 26px;
+  height: 26px;
+  margin-right: 13px;
+  font-size: 13px;
+  margin-bottom: 0;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+body.online-doctor .one-radio label::before {
+  background: none;
+  display: none;
+}
+body.online-doctor .one-radio .one-radio-wrapper {
+  width: 45px;
+  display: inline-block;
+  vertical-align: middle;
+}
+body.online-doctor .one-radio .one-radio-wrapper input[type="checkbox"] {
+  display: none;
+  border: 1px solid #08c0de;
+}
+body.online-doctor .one-radio .one-radio-wrapper input[type="checkbox"]:checked + label {
+  background-position: -26px 0;
+}
+body.online-doctor .unsubscriptionModal .submit,
+body.online-doctor .unsubscriptionModal .reset {
+  width: 180px;
+  font-size: 18px;
+}
+body.online-doctor .unsubscriptionModal .reset {
+  width: 180px;
+}
+body.online-doctor .programs {
+  margin-bottom: 40px;
+}
+body.online-doctor #partnersWrapper {
+  padding: 0;
+  margin-top: 70px;
+}
+body.online-doctor #partnersWrapper .subtitle-wrapper {
+  padding: 0 0 20px;
+}
+body.online-doctor #partnersWrapper .subtitle-wrapper h2.title {
+  border-bottom: 0;
+  font-size: 44px;
+  font-weight: normal;
+  color: #000000;
+}
+body.online-doctor #partnersWrapper .partners-wrapper li .partner {
+  height: auto;
+  border: 1px solid #00aabe;
+  padding: 15px 25px;
+  position: relative;
+  -webkit-border-radius: 4px 4px 4px 4px;
+  -moz-border-radius: 4px 4px 4px 4px;
+  -o-border-radius: 4px 4px 4px 4px;
+  -khtml-border-radius: 4px 4px 4px 4px;
+  border-radius: 4px 4px 4px 4px;
+  behavior: url(../../css/PIE.htc);
+}
+body.online-doctor #partnersWrapper .partners-wrapper li .partner .partner-info-wrapper {
+  font-weight: normal;
+  height: 280px;
+}
+body.online-doctor #partnersWrapper .partners-wrapper li .partner .partner-info-wrapper .partner-name-wrapper {
+  padding: 20px 0 10px;
+}
+body.online-doctor #partnersWrapper .partners-wrapper li .partner .partner-info-wrapper .partner-name-wrapper .partner-name {
+  font-size: 22px;
+}
+body.online-doctor #partnersWrapper .partners-wrapper li .partner .partner-info-wrapper .partner-description-wrapper .partner-description {
+  font-family: 'CirceRounded';
+  font-size: 14px;
+  line-height: 20px;
+}
+body.online-doctor #partnersWrapper .partners-wrapper li .partner .buttons-wrapper {
+  padding: 10px 0;
+}
+body.online-doctor #partnersWrapper .partners-wrapper li .partner .buttons-wrapper .subscription {
+  width: 180px;
+  height: 32px;
+  line-height: 33px;
+}
+body.online-doctor #partnersWrapper .partners-wrapper li .partner .buttons-wrapper .subscription.subscribe {
+  background: #00aabe;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: 'CirceRounded';
+}
+body.online-doctor #partnersWrapper .partners-wrapper li .partner .buttons-wrapper .subscription.subscribe:hover {
+  background: #006672;
+}
+body.online-doctor #profileWrapper {
+  padding: 0 0 50px 0;
+}
+body.online-doctor #profileWrapper .content-wrapper {
+  border-top: 1px solid #00aabe;
+  margin-top: 40px;
+}
+body.online-doctor #profileWrapper .content-wrapper .nav-tabs {
+  border-bottom: 0;
+  margin-top: -46px;
+  margin-right: 100px;
+  text-align: right;
+}
+body.online-doctor #profileWrapper .content-wrapper .nav-tabs li {
+  background: #00aabe;
+  height: 46px;
+  display: inline-block;
+  border-color: #00aabe;
+  border-width: 1px 1px 0;
+  border-style: solid;
+  -webkit-border-radius: 20px 20px 0 0;
+  -moz-border-radius: 20px 20px 0 0;
+  -o-border-radius: 20px 20px 0 0;
+  -khtml-border-radius: 20px 20px 0 0;
+  border-radius: 20px 20px 0 0;
+  behavior: url(../../css/PIE.htc);
+  font-size: 18px;
+  font-weight: normal;
+  color: #ffffff;
+  float: none;
+  overflow: hidden;
+  position: relative;
+}
+body.online-doctor #profileWrapper .content-wrapper .nav-tabs li.active {
+  background: #ffffff;
+  color: #00aabe;
+  z-index: 1;
+}
+body.online-doctor #profileWrapper .content-wrapper .nav-tabs li:first-child {
+  margin-right: -15px;
+}
+body.online-doctor #profileWrapper .content-wrapper .nav-tabs li a {
+  border: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+  line-height: 48px;
+  margin: 0;
+  padding: 0 40px;
+  width: 100%;
+}
+body.online-doctor #profileWrapper .content-wrapper .nav-tabs li a:hover,
+body.online-doctor #profileWrapper .content-wrapper .nav-tabs li a:focus {
+  background: inherit;
+}
+body.online-doctor #profileWrapper .content-wrapper .tab-pane {
+  display: none;
+  clear: both;
+}
+body.online-doctor #profileWrapper .content-wrapper .tab-pane.active {
+  display: block;
+}
+body.online-doctor #profileWrapper .content-wrapper .title-wrapper {
+  line-height: 1;
+  border: 0;
+  margin: 0;
+  padding-top: 20px;
+}
+body.online-doctor #profileWrapper .content-wrapper .title-wrapper h2.title {
+  font-size: 34px;
+  font-weight: normal;
+  margin-top: 10px;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings {
+  width: 65%;
+  vertical-align: top;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .ext-input .label-wrapper {
+  position: static;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .ext-input .label-wrapper .label-text {
+  display: inline-block;
+  vertical-align: middle;
+  height: auto;
+  font-size: 18px;
+  font-weight: normal;
+  font-family: 'CirceRounded';
+  line-height: 28px;
+  color: #000000;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .ext-input .label-wrapper .error-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .ext-input .label-wrapper .error-wrapper .error-text {
+  font-family: 'CirceRounded';
+  font-weight: normal;
+  font-size: 12px;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .ext-input .input-wrapper {
+  position: static;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .ext-input .input-wrapper input[type="text"],
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .ext-input .input-wrapper input[type="password"] {
+  padding-top: 0;
+  height: 50px;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .profile-settings-wrapper {
+  padding: 0;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .profile-settings-wrapper .avatar-wrapper {
+  border: 0;
+  height: auto;
+  padding: 20px 0;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .profile-settings-wrapper .avatar-wrapper .avatar-container {
+  width: 167px;
+  height: 167px;
+  border: 1px solid #edf0f1;
+  position: relative;
+  -webkit-border-radius: 0 0 0 0;
+  -moz-border-radius: 0 0 0 0;
+  -o-border-radius: 0 0 0 0;
+  -khtml-border-radius: 0 0 0 0;
+  border-radius: 0 0 0 0;
+  behavior: url(../../css/PIE.htc);
+  float: none;
+  display: inline-block;
+  vertical-align: bottom;
+  margin: 0;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .profile-settings-wrapper .avatar-wrapper .avatar-container img#userAvatar {
+  width: 100%;
+  height: auto;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .profile-settings-wrapper .avatar-wrapper .buttons-wrapper {
+  display: inline-block;
+  vertical-align: bottom;
+  font-size: 18px;
+  padding: 0 0 0 30px;
+  height: auto;
+  line-height: 1;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .profile-settings-wrapper .avatar-wrapper .buttons-wrapper .actions > a {
+  display: block;
+  height: 26px;
+  line-height: 26px;
+  text-decoration: underline;
+  font-family: 'CirceRounded';
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .profile-settings-wrapper .avatar-wrapper .buttons-wrapper .actions > a:hover {
+  text-decoration: none;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .profile-settings-wrapper .avatar-wrapper .buttons-wrapper .actions #changeAvatar {
+  width: auto;
+  color: #000000;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .profile-settings-wrapper .avatar-wrapper .buttons-wrapper .actions #removeAvatar {
+  display: none;
+  width: auto;
+  height: 22px;
+  line-height: 22px;
+  color: #f0505a;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .profile-settings-wrapper .avatar-wrapper .buttons-wrapper .actions #removeAvatar.visible {
+  display: block;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .profile-settings-wrapper .profile-form {
+  width: 100%;
+  margin-bottom: 30px;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .profile-settings-wrapper .profile-form .ext-input {
+  height: auto;
+  border: 0;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .profile-settings-wrapper .profile-form .ext-input .input-wrapper #updateName {
+  font-size: 44px;
+  font-weight: normal;
+  font-family: 'CirceRounded';
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .profile-settings-wrapper .profile-form .ext-input .input-wrapper #tmp-phone {
+  width: 180px;
+  height: 33px;
+  padding: 0 10px;
+  border: 1px solid #00aabe;
+  position: relative;
+  -webkit-border-radius: 30px 30px 30px 30px;
+  -moz-border-radius: 30px 30px 30px 30px;
+  -o-border-radius: 30px 30px 30px 30px;
+  -khtml-border-radius: 30px 30px 30px 30px;
+  border-radius: 30px 30px 30px 30px;
+  behavior: url(../../css/PIE.htc);
+  font-size: 24px;
+  line-height: 22px;
+  color: #000000;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .profile-settings-wrapper .profile-form form#profileForm {
+  margin-bottom: 30px;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .profile-settings-wrapper .profile-form form#profileForm .buttons-wrapper {
+  float: none;
+  padding: 0;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .profile-settings-wrapper .profile-form form#profileForm .buttons-wrapper .update {
+  -webkit-border-radius: 15px 15px 15px 15px;
+  -moz-border-radius: 15px 15px 15px 15px;
+  -o-border-radius: 15px 15px 15px 15px;
+  -khtml-border-radius: 15px 15px 15px 15px;
+  border-radius: 15px 15px 15px 15px;
+  behavior: url(../../css/PIE.htc);
+  position: relative;
+  width: 200px;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .profile-settings-wrapper .profile-form form#profileForm #phoneContainer {
+  width: 310px;
+  height: 100px;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 22px;
+  margin-bottom: 15px;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .profile-settings-wrapper .profile-form form#profileForm #phoneContainer .input-wrapper {
+  top: 20px;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .profile-settings-wrapper .profile-form form#profileForm #phoneContainer .phone-control {
+  margin-top: 4px;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .profile-settings-wrapper .profile-form form#profileForm #phoneContainer .phone-control .code-container {
+  width: 130px;
+  border: 0;
+  margin-top: 4px;
+  line-height: 25px;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .profile-settings-wrapper .profile-form form#profileForm #phoneContainer .phone-control .code-container::after {
+  content: "";
+  display: block;
+  width: 93px;
+  border-bottom: 1px dashed;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .profile-settings-wrapper .profile-form form#profileForm #phoneContainer .phone-control .code-container .arrow-down {
+  margin-top: 7px;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .profile-settings-wrapper .profile-form form#profileForm #phoneContainer .phone-control .code-container .country {
+  display: inline-block;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .profile-settings-wrapper .profile-form form#profileForm #phoneContainer .phone-control .popup-list-container {
+  left: 0;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .profile-settings-wrapper .profile-form form#profileForm .info-wrapper {
+  display: none;
+  margin-top: 10px;
+  font-size: 18px;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .profile-settings-wrapper .profile-form form#confirmMobileForm {
+  width: 500px;
+  border: 1px solid #f0505a;
+  position: relative;
+  -webkit-border-radius: 13px 13px 13px 13px;
+  -moz-border-radius: 13px 13px 13px 13px;
+  -o-border-radius: 13px 13px 13px 13px;
+  -khtml-border-radius: 13px 13px 13px 13px;
+  border-radius: 13px 13px 13px 13px;
+  behavior: url(../../css/PIE.htc);
+  padding: 10px 30px 0;
+  display: none;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .profile-settings-wrapper .profile-form form#confirmMobileForm .info-wrapper {
+  padding: 10px 0;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .profile-settings-wrapper .profile-form form#confirmMobileForm .info-wrapper .info {
+  font-family: 'CirceRounded';
+  font-size: 18px;
+  color: #00aabe;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .profile-settings-wrapper .profile-form form#confirmMobileForm .ext-input .label-wrapper {
+  top: 0;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .profile-settings-wrapper .profile-form form#confirmMobileForm .ext-input .input-wrapper {
+  top: 0;
+  margin: 5px 0 10px;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .profile-settings-wrapper .profile-form form#confirmMobileForm .ext-input .input-wrapper input[type="text"] {
+  font-family: 'CirceRounded';
+  border: 1px solid #00aabe;
+  position: relative;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -o-border-radius: 20px 20px 20px 20px;
+  -khtml-border-radius: 20px 20px 20px 20px;
+  border-radius: 20px 20px 20px 20px;
+  behavior: url(../../css/PIE.htc);
+  height: 33px;
+  line-height: 33px;
+  padding: 0 15px;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .profile-settings-wrapper .profile-form form#confirmMobileForm .buttons-wrapper {
+  padding: 10px 0 20px 0;
+  white-space: nowrap;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .profile-settings-wrapper .profile-form form#confirmMobileForm .buttons-wrapper .confirm-code {
+  width: 188px;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .profile-settings-wrapper .profile-form form#confirmMobileForm .buttons-wrapper .confirm-code.sending {
+  font-family: 'CirceRounded';
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .profile-settings-wrapper .profile-form form#confirmMobileForm .buttons-wrapper .resend-code {
+  font-family: 'CirceRounded';
+  width: 220px;
+  margin-left: 30px;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .profile-settings-wrapper .profile-form form#confirmMobileForm .buttons-wrapper .resend-code.sending {
+  font-family: 'CirceRounded';
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .profile-settings-wrapper .profile-form.code-sent #profileForm .info-wrapper {
+  display: none;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .profile-settings-wrapper .profile-form.code-sent #confirmMobileForm {
+  display: block;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .change-password-wrapper {
+  width: 395px;
+  float: none;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .change-password-wrapper #changePasswordForm {
+  margin-top: 15px;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .change-password-wrapper #changePasswordForm .ext-input {
+  height: 70px;
+  border: 0;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .change-password-wrapper #changePasswordForm .ext-input .input-wrapper {
+  top: 6px;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .change-password-wrapper #changePasswordForm .ext-input .input-wrapper input[type="password"] {
+  border: 1px solid #00aabe;
+  position: relative;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -o-border-radius: 20px 20px 20px 20px;
+  -khtml-border-radius: 20px 20px 20px 20px;
+  border-radius: 20px 20px 20px 20px;
+  behavior: url(../../css/PIE.htc);
+  height: 33px;
+  line-height: 33px;
+  padding: 0 15px;
+  font-family: 'CirceRounded';
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .change-password-wrapper #changePasswordForm .ext-input .input-wrapper input[type="password"]::-webkit-input-placeholder {
+  color: #ffffff;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .change-password-wrapper #changePasswordForm .ext-input .input-wrapper input[type="password"]::-moz-placeholder {
+  color: #ffffff;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .change-password-wrapper #changePasswordForm .ext-input .input-wrapper input[type="password"]:-moz-placeholder {
+  color: #ffffff;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .change-password-wrapper #changePasswordForm .ext-input .input-wrapper input[type="password"]:-ms-input-placeholder {
+  color: #ffffff;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .change-password-wrapper #changePasswordForm .ext-input .label-wrapper {
+  position: static;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .change-password-wrapper #changePasswordForm .buttons-wrapper {
+  margin: 15px 0 10px;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .profile-settings .change-password-wrapper #changePasswordForm .buttons-wrapper .change-password {
+  width: auto;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .sidebar-right {
+  width: 28%;
+  vertical-align: top;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .sidebar-right .balance-wrapper {
+  padding-left: 30px;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .sidebar-right .balance-wrapper .balance-value {
+  color: #00aabe;
+  font-size: 44px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .sidebar-right .balance-wrapper .add-balance {
+  margin: 10px 0 20px;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .sidebar-right .balance-wrapper .transaction-history {
+  display: block;
+  color: #000000;
+  font-size: 18px;
+  line-height: 22px;
+  text-decoration: underline;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .sidebar-right .partner-programs {
+  background: #d9f0f4;
+  position: relative;
+  -webkit-border-radius: 13px 13px 13px 13px;
+  -moz-border-radius: 13px 13px 13px 13px;
+  -o-border-radius: 13px 13px 13px 13px;
+  -khtml-border-radius: 13px 13px 13px 13px;
+  border-radius: 13px 13px 13px 13px;
+  behavior: url(../../css/PIE.htc);
+  padding: 20px 20px 35px;
+  margin-top: 60px;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .sidebar-right .partner-programs .title-wrapper {
+  padding: 0;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .sidebar-right .partner-programs .title-wrapper .title {
+  margin: 5px 0 30px;
+  line-height: 34px;
+  text-align: left;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .sidebar-right .partner-programs .programs-list {
+  font-size: 18px;
+  font-weight: normal;
+  text-align: left;
+  margin-bottom: 30px;
+}
+body.online-doctor #profileWrapper .content-wrapper #profile-data .sidebar-right .partner-programs .programs-list ul {
+  list-style-type: disc;
+  font-weight: bold;
+  padding-left: 18px;
+  margin-top: 5px;
+}
+body.online-doctor #profileWrapper .content-wrapper #documents-data .title-wrapper {
+  text-align: justify;
+  text-justify: inter-word;
+}
+body.online-doctor #profileWrapper .content-wrapper #documents-data .title-wrapper > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+body.online-doctor #profileWrapper .content-wrapper #documents-data .title-wrapper::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+body.online-doctor #profileWrapper .content-wrapper #documents-data .upload-document {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 22px;
+  color: #000000;
+  text-decoration: underline;
+  margin-top: 10px;
+}
+body.online-doctor #profileWrapper .content-wrapper #documents-data .upload-document:hover {
+  text-decoration: none;
+}
+body.online-doctor #profileWrapper .content-wrapper #documents-data .upload-document.sending {
+  background: none;
+  border: 0;
+  font-family: inherit;
+}
+body.online-doctor #profileWrapper .content-wrapper #documents-data .documents-wrapper {
+  margin-top: 50px;
+}
+body.online-doctor #profileWrapper .content-wrapper #documents-data .documents-wrapper .document-item {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 40px;
+  margin-right: 15px;
+  width: 252px;
+}
+body.online-doctor #profileWrapper .content-wrapper #documents-data .documents-wrapper .document-item:nth-child(4n+4) {
+  margin-right: 0;
+}
+body.online-doctor #profileWrapper .content-wrapper #documents-data .documents-wrapper .document-item .thumb-wrapper {
+  width: 252px;
+  height: 252px;
+  text-align: center;
+  border: 1px solid #edf0f1;
+  overflow: hidden;
+  font-size: 0;
+  cursor: pointer;
+  position: relative;
+}
+body.online-doctor #profileWrapper .content-wrapper #documents-data .documents-wrapper .document-item .thumb-wrapper.special-icon::before {
+  content: "";
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+body.online-doctor #profileWrapper .content-wrapper #documents-data .documents-wrapper .document-item .thumb-wrapper > img {
+  width: 100%;
+}
+body.online-doctor #profileWrapper .content-wrapper #documents-data .documents-wrapper .document-item .thumb-wrapper:hover .delete {
+  opacity: 1;
+}
+body.online-doctor #profileWrapper .content-wrapper #documents-data .documents-wrapper .document-item .thumb-wrapper .delete {
+  background: url('../../images/default/trash-icon.png') no-repeat;
+  background-color: rgba(255, 255, 255, 0.3);
+  background-position: center;
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 6px;
+  bottom: 6px;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out 0s;
+  -moz-transition: opacity 0.2s ease-in-out 0s;
+  -ms-transition: opacity 0.2s ease-in-out 0s;
+  -o-transition: opacity 0.2s ease-in-out 0s;
+  transition: opacity 0.2s ease-in-out 0s;
+}
+body.online-doctor #profileWrapper .content-wrapper #documents-data .documents-wrapper .document-item .doc-info {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  color: #000000;
+  text-align: left;
+}
+body.online-doctor #profileWrapper .content-wrapper #documents-data .documents-wrapper .document-item .doc-info .name {
+  overflow: hidden;
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+body.online-doctor #profileWrapper .content-wrapper #documents-data .documents-wrapper .document-item .doc-info .name:hover {
+  color: #00aabe;
+}
+body.online-doctor #profileWrapper .content-wrapper #documents-data .documents-wrapper .document-item .doc-info .name a {
+  color: inherit;
+}
+body.online-doctor #profileWrapper #helpLoader {
+  background: url("/images/default/loaders/loading.gif") no-repeat;
+  display: none;
+  height: 32px;
+  margin: 0 auto;
+  width: 32px;
+}
+body.online-doctor #profileWrapper #helpLoader.visible {
+  display: block;
+}
+body.online-doctor .modal.confirmation-modal.delete-document-modal .buttons-wrapper > * {
+  height: 32px;
+  line-height: 32px;
+  font-size: 18px;
+  width: 190px;
+}
+body.online-doctor .modal.confirmation-modal.delete-document-modal .buttons-wrapper > *:first-child {
+  margin: 0 0 10px 0;
+}
+body.online-doctor #dashboard h2.title {
+  font-size: 44px;
+  font-weight: normal;
+  line-height: 44px;
+  color: #00aabe;
+  margin: 60px 0 0;
+  padding: 0 0 12px;
+}
+body.online-doctor #dashboard h3.name {
+  margin: 0 0 20px 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+body.online-doctor #dashboard .description {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 17px;
+}
+body.online-doctor #dashboard .doctors-wrapper {
+  margin-top: 34px;
+}
+body.online-doctor #dashboard .doctors-wrapper > div {
+  width: 510px;
+  border: 1px solid #8c8c8c;
+  position: relative;
+  -webkit-border-radius: 9px 9px 9px 9px;
+  -moz-border-radius: 9px 9px 9px 9px;
+  -o-border-radius: 9px 9px 9px 9px;
+  -khtml-border-radius: 9px 9px 9px 9px;
+  border-radius: 9px 9px 9px 9px;
+  behavior: url(../../css/PIE.htc);
+  vertical-align: top;
+  text-align: center;
+  padding: 20px 30px;
+}
+body.online-doctor #dashboard .doctors-wrapper .about {
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 20px;
+  min-height: 90px;
+  line-height: 22px;
+}
+body.online-doctor #dashboard .doctors-wrapper .price {
+  margin-top: 20px;
+  font-size: 22px;
+}
+body.online-doctor #dashboard .profile-doctors {
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 20px;
+}
+body.online-doctor #dashboard .profile-doctors a {
+  display: block;
+  color: #000000;
+  text-decoration: underline;
+}
+body.online-doctor #dashboard .profile-doctors a:hover {
+  color: #00aabe;
+}
+body.online-doctor #aboutWrapper .line {
+  background: #f0505a;
+  display: inline-block;
+  width: 100px;
+  height: 3px;
+  position: relative;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -o-border-radius: 3px 3px 3px 3px;
+  -khtml-border-radius: 3px 3px 3px 3px;
+  border-radius: 3px 3px 3px 3px;
+  behavior: url(../../css/PIE.htc);
+  margin: 10px auto 18px;
+  -webkit-transition: width 0.5s ease-in-out 0s;
+  -moz-transition: width 0.5s ease-in-out 0s;
+  -ms-transition: width 0.5s ease-in-out 0s;
+  -o-transition: width 0.5s ease-in-out 0s;
+  transition: width 0.5s ease-in-out 0s;
+}
+body.online-doctor #aboutWrapper .about-info-video {
+  background: url('../../images/onlinedoctor/video2.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 350px;
+  position: relative;
+  color: #ffffff;
+}
+body.online-doctor #aboutWrapper .about-info-video::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url('../../images/onlinedoctor/video_mask.png') repeat;
+  width: 100%;
+  height: 100%;
+}
+body.online-doctor #aboutWrapper .about-info-video .text-wrapper {
+  position: relative;
+  z-index: 20;
+}
+body.online-doctor #aboutWrapper .about-info-video .title {
+  font-size: 31px;
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 25px;
+}
+body.online-doctor #aboutWrapper .about-info-video #play-video {
+  background: url('../../images/onlinedoctor/play_icon.png') no-repeat;
+  background-size: cover;
+  width: 123px;
+  height: 123px;
+  margin: 0 auto 25px;
+  border: 0;
+  display: block;
+  transition: transform 0.5s ease-in-out;
+}
+body.online-doctor #aboutWrapper .about-info-video #play-video:hover {
+  transform: rotate(360deg);
+}
+body.online-doctor #aboutWrapper .about-info-video .description {
+  font-size: 16px;
+  font-weight: normal;
+  text-align: center;
+  width: 900px;
+  margin: auto;
+}
+body.online-doctor #aboutWrapper .service-conditions {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px dotted #00aabe;
+  font-weight: normal;
+}
+body.online-doctor #aboutWrapper .service-conditions.fade-in li {
+  opacity: 1;
+  top: 0;
+}
+body.online-doctor #aboutWrapper .service-conditions.fade-in li:nth-child(even) {
+  top: 0;
+}
+body.online-doctor #aboutWrapper .service-conditions li {
+  width: 315px;
+  vertical-align: top;
+  text-align: center;
+  position: relative;
+  cursor: default;
+  opacity: 0;
+  top: -50px;
+  -webkit-transition: all 1s ease-in-out 0.2s;
+  -moz-transition: all 1s ease-in-out 0.2s;
+  -ms-transition: all 1s ease-in-out 0.2s;
+  -o-transition: all 1s ease-in-out 0.2s;
+  transition: all 1s ease-in-out 0.2s;
+}
+body.online-doctor #aboutWrapper .service-conditions li:nth-child(even) {
+  top: 50px;
+}
+body.online-doctor #aboutWrapper .service-conditions li:hover .icon {
+  animation: jumping 0.8s infinite;
+  -moz-animation: jumping 0.8s infinite;
+  -webkit-animation: jumping 0.8s infinite;
+}
+body.online-doctor #aboutWrapper .service-conditions li .icon {
+  height: 61px;
+  margin: 0 auto 10px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-transition: top 0.4s ease-in-out 0s;
+  -moz-transition: top 0.4s ease-in-out 0s;
+  -ms-transition: top 0.4s ease-in-out 0s;
+  -o-transition: top 0.4s ease-in-out 0s;
+  transition: top 0.4s ease-in-out 0s;
+  position: relative;
+}
+body.online-doctor #aboutWrapper .service-conditions li .icon.img-1 {
+  background-image: url('../../images/onlinedoctor/mobile-device.svg');
+  width: 48px;
+}
+body.online-doctor #aboutWrapper .service-conditions li .icon.img-2 {
+  background-image: url('../../images/onlinedoctor/time.svg');
+  width: 100px;
+}
+body.online-doctor #aboutWrapper .service-conditions li .icon.img-3 {
+  background-image: url('../../images/onlinedoctor/clock.svg');
+  width: 70px;
+}
+body.online-doctor #aboutWrapper .service-conditions li .title {
+  font-size: 34px;
+}
+body.online-doctor #aboutWrapper .service-conditions li .description {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+}
+body.online-doctor #aboutWrapper .service-conditions li .description a {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #000000;
+}
+body.online-doctor #aboutWrapper .consultations {
+  background: rgba(0, 170, 190, 0.1);
+  padding: 30px 0 140px;
+  font-weight: normal;
+}
+body.online-doctor #aboutWrapper .consultations .consult-block {
+  width: 480px;
+  text-align: left;
+  vertical-align: top;
+}
+body.online-doctor #aboutWrapper .consultations .consult-block:hover .line {
+  width: 100%;
+}
+body.online-doctor #aboutWrapper .consultations .consult-block .title {
+  font-size: 34px;
+  line-height: 40px;
+  margin-bottom: 6px;
+}
+body.online-doctor #aboutWrapper .consultations .consult-block .description {
+  height: 100px;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 25px;
+}
+body.online-doctor #aboutWrapper .instructions {
+  border-top: 1px solid #00aabe;
+  border-bottom: 1px solid #00aabe;
+}
+body.online-doctor #aboutWrapper .instructions .nav-tabs {
+  border-bottom: 0;
+  margin-top: -58px;
+  margin-right: 0;
+  text-align: center;
+}
+body.online-doctor #aboutWrapper .instructions .nav-tabs li {
+  background: #00aabe;
+  height: 58px;
+  display: inline-block;
+  border-color: #00aabe;
+  border-width: 1px 1px 0;
+  border-style: solid;
+  -webkit-border-radius: 20px 20px 0 0;
+  -moz-border-radius: 20px 20px 0 0;
+  -o-border-radius: 20px 20px 0 0;
+  -khtml-border-radius: 20px 20px 0 0;
+  border-radius: 20px 20px 0 0;
+  behavior: url(../../css/PIE.htc);
+  font-size: 24px;
+  font-weight: normal;
+  color: #ffffff;
+  float: none;
+  overflow: hidden;
+  position: relative;
+}
+body.online-doctor #aboutWrapper .instructions .nav-tabs li.active {
+  background: #ffffff;
+  color: #00aabe;
+  z-index: 1;
+}
+body.online-doctor #aboutWrapper .instructions .nav-tabs li:first-child {
+  margin-right: -15px;
+}
+body.online-doctor #aboutWrapper .instructions .nav-tabs li a {
+  border: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+  line-height: 56px;
+  margin: 0;
+  padding: 0 40px;
+  width: 100%;
+}
+body.online-doctor #aboutWrapper .instructions .nav-tabs li a:hover,
+body.online-doctor #aboutWrapper .instructions .nav-tabs li a:focus {
+  background: inherit;
+}
+body.online-doctor #aboutWrapper .instructions .tab-pane {
+  display: none;
+  padding: 100px 0;
+}
+body.online-doctor #aboutWrapper .instructions .tab-pane.active {
+  display: block;
+}
+body.online-doctor #aboutWrapper .instructions .steps li {
+  vertical-align: top;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 28px;
+  color: #000000;
+  position: relative;
+  top: 0;
+  left: -200px;
+  opacity: 0;
+  cursor: default;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -ms-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+body.online-doctor #aboutWrapper .instructions .steps li.visible {
+  left: 0;
+  opacity: 1;
+}
+body.online-doctor #aboutWrapper .instructions .steps li.next-arrow {
+  background: url('../../images/onlinedoctor/arrows/next-arrow.png') no-repeat;
+  width: 30px;
+  height: 55px;
+  margin-top: 12px;
+}
+body.online-doctor #aboutWrapper .instructions .steps li.step {
+  width: 240px;
+  text-align: center;
+}
+body.online-doctor #aboutWrapper .instructions .steps li.step::before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 80px;
+  background: #00aabe;
+  color: #ffffff;
+  font-size: 44px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 80px;
+  position: relative;
+  -webkit-border-radius: 50% 50% 50% 50%;
+  -moz-border-radius: 50% 50% 50% 50%;
+  -o-border-radius: 50% 50% 50% 50%;
+  -khtml-border-radius: 50% 50% 50% 50%;
+  border-radius: 50% 50% 50% 50%;
+  behavior: url(../../css/PIE.htc);
+  margin: 0 auto 10px;
+}
+body.online-doctor #aboutWrapper .instructions .steps li.step.s-1::before {
+  content: "1";
+}
+body.online-doctor #aboutWrapper .instructions .steps li.step.s-2::before {
+  content: "2";
+}
+body.online-doctor #aboutWrapper .instructions .steps li.step.s-3::before {
+  content: "3";
+}
+body.online-doctor #aboutWrapper .instructions .steps li.step.s-4::before {
+  content: "4";
+}
+body.online-doctor #aboutWrapper .instructions .steps li a {
+  display: block;
+  color: inherit;
+  font-weight: bold;
+  text-decoration: underline;
+}
+body.online-doctor #aboutWrapper .guide {
+  padding: 50px 0 60px;
+}
+body.online-doctor #aboutWrapper .guide h2.title {
+  font-size: 34px;
+  font-weight: normal;
+  color: #00aabe;
+  margin: 0 0 30px;
+}
+body.online-doctor #aboutWrapper .guide .guide-blocks li {
+  width: 230px;
+  font-weight: normal;
+  text-align: left;
+  vertical-align: top;
+}
+body.online-doctor #aboutWrapper .guide .guide-blocks li:hover .line {
+  width: 100%;
+}
+body.online-doctor #aboutWrapper .guide .guide-blocks li.wide {
+  width: 280px;
+}
+body.online-doctor #aboutWrapper .guide .guide-blocks li .gd-name {
+  font-size: 24px;
+}
+body.online-doctor #aboutWrapper .guide .guide-blocks li .text {
+  width: 230px;
+  font-size: 16px;
+  line-height: 20px;
+}
+body.online-doctor #about-video-modal .modal-header {
+  height: 50px;
+}
+body.online-doctor #about-video-modal iframe {
+  margin-bottom: 20px;
+  width: 100%;
+}
+@keyframes jumping {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -10px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+@-moz-keyframes jumping {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -10px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+@-webkit-keyframes jumping {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -10px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+body.online-doctor #historyWrapper .title-wrapper {
+  border-bottom: 0;
+}
+body.online-doctor #historyWrapper h2.subtitle {
+  font-size: 24px;
+  margin: 0 0 40px 0;
+}
+body.online-doctor #historyWrapper [class$="-consults"]:not(:last-child)::after {
+  content: "";
+  display: block;
+  background: #00aabe;
+  width: 100%;
+  height: 3px;
+  position: relative;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -o-border-radius: 10px 10px 10px 10px;
+  -khtml-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  behavior: url(../../css/PIE.htc);
+}
+body.online-doctor #historyWrapper [class$="-consults"] .history-item-wrapper:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+body.online-doctor #historyWrapper .coming-consults,
+body.online-doctor #historyWrapper .history-consults {
+  margin-top: 30px;
+}
+body.online-doctor #historyWrapper .history-item-wrapper {
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px dotted #00aabe;
+}
+body.online-doctor #historyWrapper .history-item-wrapper .doctor-info {
+  vertical-align: top;
+}
+body.online-doctor #historyWrapper .history-item-wrapper .doctor-info > div {
+  display: inline-block;
+  vertical-align: top;
+}
+body.online-doctor #historyWrapper .history-item-wrapper .doctor-info .avatar-wrapper {
+  width: 260px;
+  height: 260px;
+  margin-right: 35px;
+  border: 1px solid #edf0f1;
+  text-align: center;
+  position: relative;
+}
+body.online-doctor #historyWrapper .history-item-wrapper .doctor-info .avatar-wrapper .badge {
+  background: #f0505a;
+  padding: 4px 7px 3px;
+  border-radius: 15px;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 13px;
+  position: absolute;
+  min-width: 26px;
+  top: -12px;
+  right: -20px;
+}
+body.online-doctor #historyWrapper .history-item-wrapper .doctor-info .avatar-wrapper .badge.not-rated {
+  animation: blink 1.5s linear 0s infinite;
+  -moz-animation: blink 1.5s linear 0s infinite;
+  -webkit-animation: blink 1.5s linear 0s infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+body.online-doctor #historyWrapper .history-item-wrapper .doctor-info .avatar-wrapper .badge:empty {
+  display: none;
+}
+body.online-doctor #historyWrapper .history-item-wrapper .doctor-info .avatar-wrapper img {
+  width: 100%;
+  height: auto;
+}
+body.online-doctor #historyWrapper .history-item-wrapper .doctor-info .about-doctor {
+  width: 300px;
+}
+body.online-doctor #historyWrapper .history-item-wrapper .doctor-info .about-doctor .name {
+  font-size: 24px;
+  font-weight: normal;
+  text-align: left;
+}
+body.online-doctor #historyWrapper .history-item-wrapper .doctor-info .about-doctor .name:hover {
+  color: #00aabe;
+}
+body.online-doctor #historyWrapper .history-item-wrapper .doctor-info .about-doctor .name.no-doctor:hover {
+  color: inherit;
+}
+body.online-doctor #historyWrapper .history-item-wrapper .doctor-info .about-doctor .name a {
+  color: inherit;
+}
+body.online-doctor #historyWrapper .history-item-wrapper .doctor-info .about-doctor .line {
+  background: #f0505a;
+  width: 100px;
+  height: 3px;
+  position: relative;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -o-border-radius: 20px 20px 20px 20px;
+  -khtml-border-radius: 20px 20px 20px 20px;
+  border-radius: 20px 20px 20px 20px;
+  behavior: url(../../css/PIE.htc);
+  margin: 22px 0;
+}
+body.online-doctor #historyWrapper .history-item-wrapper .doctor-info .about-doctor .professions {
+  font-size: 18px;
+  font-weight: normal;
+  text-align: left;
+}
+body.online-doctor #historyWrapper .history-item-wrapper .consult-info {
+  width: 230px;
+  font-weight: normal;
+  vertical-align: top;
+}
+body.online-doctor #historyWrapper .history-item-wrapper .consult-info .status {
+  display: block;
+  font-size: 24px;
+}
+body.online-doctor #historyWrapper .history-item-wrapper .consult-info .consult-date {
+  display: block;
+  font-size: 18px;
+  white-space: nowrap;
+  text-align: left;
+}
+body.online-doctor #historyWrapper .history-item-wrapper .consult-info .consult-date::before {
+  content: "";
+  background: url('../../images/onlinedoctor/calendar-icon.png') no-repeat;
+  display: inline-block;
+  position: relative;
+  top: 4px;
+  width: 22px;
+  height: 24px;
+  margin-right: 10px;
+}
+body.online-doctor #historyWrapper .history-item-wrapper .buttons-wrapper {
+  margin-top: 10px;
+}
+body.online-doctor #historyWrapper .history-item-wrapper .buttons-wrapper .button-style {
+  width: 186px;
+  display: block;
+  margin-bottom: 10px;
+}
+body.online-doctor #historyWrapper .no-history {
+  font-weight: normal;
+  font-size: 24px;
+}
+body.online-doctor #historyWrapper .no-history .buttons-wrapper {
+  margin-top: 30px;
+}
+body.online-doctor #historyWrapper .no-history .buttons-wrapper > a:first-child {
+  margin-right: 25px;
+}
+body.online-doctor #encyclopediaWrapper .title-wrapper {
+  border-bottom: 0;
+  margin-bottom: 0;
+  line-height: 1;
+  text-align: justify;
+}
+body.online-doctor #encyclopediaWrapper .title-wrapper::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+body.online-doctor #encyclopediaWrapper .title-wrapper .title,
+body.online-doctor #encyclopediaWrapper .title-wrapper .page-title {
+  vertical-align: top;
+  max-width: 750px;
+}
+body.online-doctor #encyclopediaWrapper .title-wrapper .button-style {
+  vertical-align: top;
+  margin-top: 38px;
+}
+body.online-doctor #encyclopediaWrapper .main-container {
+  margin-top: 15px;
+}
+body.online-doctor #encyclopediaWrapper .encyclopedy-content {
+  width: 830px;
+  vertical-align: top;
+  margin-bottom: 20px;
+}
+body.online-doctor #encyclopediaWrapper .encyclopedy-content.single-page {
+  width: 100%;
+}
+body.online-doctor #encyclopediaWrapper .encyclopedy-content .timeline.no-last-border .enc-category:last-child {
+  border-bottom: 0;
+}
+body.online-doctor #encyclopediaWrapper .encyclopedy-content .timeline .enc-category {
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  border-bottom: 1px dotted #00aabe;
+}
+body.online-doctor #encyclopediaWrapper .encyclopedy-content .timeline .enc-category:last-child {
+  margin-bottom: 0;
+}
+body.online-doctor #encyclopediaWrapper .encyclopedy-content .timeline .enc-category .article-image {
+  width: 260px;
+  height: 260px;
+  margin-right: 30px;
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid #edf0f1;
+}
+body.online-doctor #encyclopediaWrapper .encyclopedy-content .timeline .enc-category .article-image img {
+  max-width: 100%;
+  height: auto;
+}
+body.online-doctor #encyclopediaWrapper .encyclopedy-content .timeline .enc-category .article-info {
+  width: 485px;
+  display: inline-block;
+  vertical-align: top;
+}
+body.online-doctor #encyclopediaWrapper .encyclopedy-content .timeline .enc-category .article-info.full-width {
+  width: 100%;
+  padding-right: 20px;
+}
+body.online-doctor #encyclopediaWrapper .encyclopedy-content .timeline .enc-category .article-info .enc-title {
+  font-size: 38px;
+  font-weight: normal;
+  text-align: left;
+  color: inherit;
+  display: block;
+  line-height: 40px;
+}
+body.online-doctor #encyclopediaWrapper .encyclopedy-content .timeline .enc-category .article-info .enc-title:hover {
+  color: #00aabe;
+}
+body.online-doctor #encyclopediaWrapper .encyclopedy-content .timeline .enc-category .article-info .description {
+  font-size: 14px;
+  font-weight: normal;
+}
+body.online-doctor #encyclopediaWrapper .encyclopedy-content .timeline .enc-category .article-info .description a {
+  color: inherit;
+}
+body.online-doctor #encyclopediaWrapper .encyclopedy-content .timeline .enc-category .article-info .description a:hover {
+  color: #00aabe;
+}
+body.online-doctor #encyclopediaWrapper .encyclopedy-content .line-styled {
+  margin: 18px 0 20px;
+}
+body.online-doctor #encyclopediaWrapper .encyclopedy-content .category-tags {
+  font-size: 18px;
+  margin-top: 10px;
+}
+body.online-doctor #encyclopediaWrapper .encyclopedy-content .category-tags a {
+  color: inherit;
+  text-decoration: underline;
+}
+body.online-doctor #encyclopediaWrapper .encyclopedy-content .category-tags a:hover {
+  color: #00aabe;
+}
+body.online-doctor #encyclopediaWrapper .pagination-wrapper {
+  margin-bottom: 40px;
+}
+body.online-doctor #encyclopediaWrapper .encyclopedy-sidebar {
+  width: 200px;
+  font-size: 18px;
+  text-align: left;
+  vertical-align: top;
+}
+body.online-doctor #encyclopediaWrapper .encyclopedy-sidebar .subtitle-wrapper .title {
+  font-size: 34px;
+  font-weight: normal;
+  margin: 0 0 20px;
+  color: #000000;
+}
+body.online-doctor #encyclopediaWrapper .encyclopedy-sidebar ul li {
+  margin-bottom: 10px;
+}
+body.online-doctor #encyclopediaWrapper .encyclopedy-sidebar ul li :hover,
+body.online-doctor #encyclopediaWrapper .encyclopedy-sidebar ul li.selected {
+  color: #00aabe;
+}
+body.online-doctor #encyclopediaWrapper .encyclopedy-sidebar ul li a {
+  display: block;
+  color: inherit;
+  font-size: 18px;
+  text-decoration: underline;
+}
+body.online-doctor #encyclopediaWrapper.article-content .article {
+  font-weight: normal;
+  font-size: 14px;
+}
+body.online-doctor #encyclopediaWrapper.article-content .article img {
+  width: 260px;
+  margin-right: 14px;
+  float: left;
+  border: 1px solid #edf0f1;
+}
+body.online-doctor #encyclopediaWrapper.article-content .article .article-wrapper h1 {
+  font-size: 24px;
+  margin: 0;
+  padding-bottom: 10px;
+}
+body.online-doctor #encyclopediaWrapper.article-content .article .article-wrapper h2 {
+  font-size: 20px;
+  margin: 0;
+  padding-bottom: 10px;
+}
+body.online-doctor #encyclopediaWrapper.article-content .article .article-wrapper h3 {
+  font-size: 16px;
+  margin: 0;
+  padding-bottom: 10px;
+}
+body.online-doctor #encyclopediaWrapper.article-content .article .article-wrapper img {
+  max-width: 100%;
+}
+body.online-doctor #encyclopediaWrapper.article-content .article .article-wrapper ul {
+  padding: 0;
+  list-style-position: inside;
+}
+body.online-doctor #encyclopediaWrapper.article-content .article .article-wrapper ul.lines li::before {
+  content: "\2014";
+  color: #f0505a;
+  width: 14px;
+  height: 1px;
+  display: inline-block;
+  padding-right: 20px;
+}
+body.online-doctor #encyclopediaWrapper.article-content .article .article-wrapper ul li {
+  color: inherit;
+}
+body.online-doctor #encyclopediaWrapper.article-content .share-wrapper {
+  padding-top: 20px;
+  margin-bottom: 50px;
+  clear: both;
+}
+body.online-doctor #encyclopediaWrapper.article-content .share-wrapper ul {
+  list-style: none;
+}
+body.online-doctor #encyclopediaWrapper.article-content .share-wrapper ul li {
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url('../../images/onlinedoctor/social-buttons.png');
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+body.online-doctor #encyclopediaWrapper.article-content .share-wrapper ul li:first-child {
+  margin-left: 0;
+}
+body.online-doctor #encyclopediaWrapper.article-content .share-wrapper ul li:hover.vk {
+  background-position: 0 -51px;
+}
+body.online-doctor #encyclopediaWrapper.article-content .share-wrapper ul li:hover.fb {
+  background-position: -55px -51px;
+}
+body.online-doctor #encyclopediaWrapper.article-content .share-wrapper ul li:hover.inst {
+  background-position: -111px -51px;
+}
+body.online-doctor #encyclopediaWrapper.article-content .share-wrapper ul li:hover.tw {
+  background-position: -167px -51px;
+}
+body.online-doctor #encyclopediaWrapper.article-content .share-wrapper ul li.fb {
+  background-position: -55px 0;
+}
+body.online-doctor #encyclopediaWrapper.article-content .share-wrapper ul li.inst {
+  background-position: -111px 0;
+}
+body.online-doctor #encyclopediaWrapper.article-content .share-wrapper ul li.tw {
+  background-position: -167px 0;
+}
+body.online-doctor #encyclopediaWrapper.article-content .similar-articles-wrapper {
+  border-top: 1px dotted #00aabe;
+  font-weight: normal;
+  margin-bottom: 60px;
+}
+body.online-doctor #encyclopediaWrapper.article-content .similar-articles-wrapper h2.title {
+  font-size: 38px;
+  margin: 30px 0;
+}
+body.online-doctor #encyclopediaWrapper.article-content .similar-articles-wrapper .similar-articles li {
+  width: 314px;
+  margin-right: 40px;
+}
+body.online-doctor #encyclopediaWrapper.article-content .similar-articles-wrapper .similar-articles li .image-thumb {
+  width: 100%;
+  height: 190px;
+  border: 1px solid #edf0f1;
+}
+body.online-doctor #encyclopediaWrapper.article-content .similar-articles-wrapper .similar-articles li .image-thumb img {
+  width: 100%;
+  height: auto;
+}
+body.online-doctor #encyclopediaWrapper.article-content .similar-articles-wrapper .similar-articles li .article-title {
+  font-size: 24px;
+}
+body.online-doctor #encyclopediaWrapper.article-content .similar-articles-wrapper .similar-articles li .line-styled {
+  margin: 15px 0 15px;
+}
+body.online-doctor #encyclopediaWrapper.article-content .similar-articles-wrapper .similar-articles li .description {
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 15px;
+}
+body.online-doctor #encyclopediaWrapper.article-content .similar-articles-wrapper .similar-articles li .tags {
+  font-size: 14px;
+  font-weight: bold;
+}
+body.online-doctor #encyclopediaWrapper.article-content .similar-articles-wrapper .similar-articles li .tags a {
+  color: inherit;
+  text-decoration: underline;
+}
+body.online-doctor #encyclopediaWrapper.article-content .similar-articles-wrapper .similar-articles li .tags a:hover {
+  color: #00aabe;
+}
+body.online-doctor #encyclopediaWrapper.article-content .similar-articles-wrapper .similar-articles .arrow {
+  background: url('../../images/onlinedoctor/arrows/blue-arrow.png') no-repeat;
+  width: 30px;
+  height: 55px;
+  opacity: 0.3;
+  cursor: pointer;
+  position: absolute;
+  top: 66px;
+  transition: opacity 0.2s ease-in-out 0s;
+}
+body.online-doctor #encyclopediaWrapper.article-content .similar-articles-wrapper .similar-articles .arrow:hover {
+  opacity: 1;
+}
+body.online-doctor #encyclopediaWrapper.article-content .similar-articles-wrapper .similar-articles .arrow.prev {
+  left: -58px;
+}
+body.online-doctor #encyclopediaWrapper.article-content .similar-articles-wrapper .similar-articles .arrow.next {
+  background-position: -30px 0;
+  right: -20px;
+}
+body.online-doctor #postponeModal .modal-dialog {
+  width: 1164px;
+}
+body.online-doctor #postponeModal .modal-body {
+  margin: 30px 0 70px;
+}
+body.online-doctor #postponeModal .dayDetailed {
+  display: inline-block;
+}
+body.online-doctor #doctorProfilePage .nav-tabs {
+  border-bottom: 0;
+  margin-top: -46px;
+  margin-right: 100px;
+  text-align: right;
+}
+body.online-doctor #doctorProfilePage .nav-tabs li {
+  background: #00aabe;
+  height: 46px;
+  display: inline-block;
+  border-color: #00aabe;
+  border-width: 1px 1px 0;
+  border-style: solid;
+  -webkit-border-radius: 20px 20px 0 0;
+  -moz-border-radius: 20px 20px 0 0;
+  -o-border-radius: 20px 20px 0 0;
+  -khtml-border-radius: 20px 20px 0 0;
+  border-radius: 20px 20px 0 0;
+  behavior: url(../../css/PIE.htc);
+  font-size: 18px;
+  font-weight: normal;
+  color: #ffffff;
+  float: none;
+  overflow: hidden;
+  position: relative;
+}
+body.online-doctor #doctorProfilePage .nav-tabs li.active {
+  background: #ffffff;
+  color: #00aabe;
+  z-index: 1;
+}
+body.online-doctor #doctorProfilePage .nav-tabs li:first-child {
+  margin-right: -15px;
+}
+body.online-doctor #doctorProfilePage .nav-tabs li a {
+  border: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+  line-height: 46px;
+  margin: 0;
+  padding: 0 20px;
+  width: 100%;
+}
+body.online-doctor #doctorProfilePage .nav-tabs li a:hover,
+body.online-doctor #doctorProfilePage .nav-tabs li a:focus {
+  background: inherit;
+}
+body.online-doctor #doctorProfilePage .doctor-info {
+  position: relative;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #00aabe;
+}
+body.online-doctor #doctorProfilePage .doctor-info .name {
+  font-size: 44px;
+  font-weight: normal;
+  margin: 30px 0 30px;
+  text-indent: -2px;
+  display: inline-block;
+}
+body.online-doctor #doctorProfilePage .doctor-info .short-description {
+  width: 600px;
+  font-weight: normal;
+}
+body.online-doctor #doctorProfilePage .doctor-info .short-description .profession {
+  font-size: 19px;
+  line-height: 24px;
+}
+body.online-doctor #doctorProfilePage .doctor-info .short-description .grade {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 20px;
+}
+body.online-doctor #doctorProfilePage .doctor-info .doctors-type {
+  font-size: 19px;
+  font-weight: bold;
+  padding: 0 20px;
+  height: 32px;
+  display: inline-block;
+  position: relative;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -o-border-radius: 20px 20px 20px 20px;
+  -khtml-border-radius: 20px 20px 20px 20px;
+  border-radius: 20px 20px 20px 20px;
+  behavior: url(../../css/PIE.htc);
+  margin-top: 15px;
+  text-align: center;
+  line-height: 28px;
+}
+body.online-doctor #doctorProfilePage .doctor-info .doctors-type.consult {
+  background: rgba(0, 170, 190, 0.07);
+  color: #00aabe;
+}
+body.online-doctor #doctorProfilePage .doctor-info .doctors-type.expert {
+  background: rgba(240, 80, 90, 0.07);
+  color: #f0505a;
+}
+body.online-doctor #doctorProfilePage #doctorProfileWrapper {
+  padding-top: 30px;
+}
+body.online-doctor #doctorProfilePage #doctorProfileWrapper .description-wrapper {
+  border-bottom: 1px dotted #00aabe;
+  padding-bottom: 50px;
+}
+body.online-doctor #doctorProfilePage #doctorProfileWrapper .description-wrapper > * {
+  display: inline-block;
+  vertical-align: top;
+}
+body.online-doctor #doctorProfilePage #doctorProfileWrapper .description-wrapper .info-wrapper {
+  float: none;
+  padding: 0 0 0 10px;
+  margin-right: 90px;
+  width: 400px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+}
+body.online-doctor #doctorProfilePage #doctorProfileWrapper .description-wrapper .info-wrapper .info p {
+  margin-bottom: 15px;
+}
+body.online-doctor #doctorProfilePage #doctorProfileWrapper .description-wrapper .price-container {
+  float: none;
+  padding: 0;
+  width: 204px;
+}
+body.online-doctor #doctorProfilePage #doctorProfileWrapper .description-wrapper .price-container .text {
+  font-size: 18px;
+  font-weight: normal;
+}
+body.online-doctor #doctorProfilePage #doctorProfileWrapper .description-wrapper .price-container .price {
+  color: #00aabe;
+  font-size: 39px;
+  line-height: 39px;
+  margin: 5px 0 15px;
+}
+body.online-doctor #doctorProfilePage #doctorProfileWrapper .description-wrapper .price-container .button-container {
+  float: none;
+  padding: 0;
+  width: 100%;
+}
+body.online-doctor #doctorProfilePage #doctorProfileWrapper .description-wrapper .price-container .button-container .order {
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  margin-bottom: 20px;
+  white-space: nowrap;
+}
+body.online-doctor #doctorProfilePage #doctorProfileWrapper .profile-info-blocks {
+  float: none;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 80px 0 0;
+  padding: 0;
+  width: 700px;
+  border: 0;
+}
+body.online-doctor #doctorProfilePage #doctorProfileWrapper .profile-info-blocks .doctor-info-block .info {
+  font-family: 'CirceRounded';
+  font-weight: normal;
+  color: #000000;
+  font-size: 16px;
+}
+body.online-doctor #doctorProfilePage #doctorProfileWrapper h2.title {
+  font-size: 34px;
+  font-weight: normal;
+}
+body.online-doctor #doctorProfilePage #doctorProfileWrapper .certificates {
+  float: none;
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+  margin: 0;
+}
+body.online-doctor #doctorProfilePage .other-doctors-wrapper {
+  margin-top: 40px;
+  padding-bottom: 90px;
+}
+body.online-doctor #doctorProfilePage .other-doctors-wrapper .other-doctors-container {
+  min-height: 226px;
+  position: relative;
+}
+body.online-doctor #doctorProfilePage .other-doctors-wrapper .other-doctors-container .arrow {
+  background: url('../../images/onlinedoctor/arrows/blue-arrow.png') no-repeat;
+  width: 30px;
+  height: 55px;
+  opacity: 0.3;
+  position: absolute;
+  top: 50%;
+  margin-top: -37px;
+  cursor: pointer;
+  -webkit-transition: opacity 0.2s ease-in-out 0s;
+  -moz-transition: opacity 0.2s ease-in-out 0s;
+  -ms-transition: opacity 0.2s ease-in-out 0s;
+  -o-transition: opacity 0.2s ease-in-out 0s;
+  transition: opacity 0.2s ease-in-out 0s;
+}
+body.online-doctor #doctorProfilePage .other-doctors-wrapper .other-doctors-container .arrow.prev {
+  left: -58px;
+}
+body.online-doctor #doctorProfilePage .other-doctors-wrapper .other-doctors-container .arrow.next {
+  right: -30px;
+  background-position: -30px 0;
+}
+body.online-doctor #doctorProfilePage .other-doctors-wrapper .other-doctors-container .arrow:hover {
+  opacity: 1;
+}
+body.online-doctor #doctorProfilePage .other-doctors-wrapper .other-doctors-container .arrow.slick-disabled {
+  cursor: not-allowed;
+}
+body.online-doctor #doctorProfilePage .other-doctors-wrapper .other-doctors-container .arrow.slick-disabled:hover {
+  opacity: 0.3;
+}
+body.online-doctor #doctorProfilePage .other-doctors-wrapper .other-doctors-container ul#otherDoctors li {
+  width: 500px;
+  height: auto;
+  float: none;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+  border: 0;
+}
+body.online-doctor #doctorProfilePage .other-doctors-wrapper .other-doctors-container ul#otherDoctors li .info-wrapper {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+  width: 220px;
+}
+body.online-doctor #doctorProfilePage .other-doctors-wrapper .other-doctors-container ul#otherDoctors li .info-wrapper .name-wrapper .name {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 24px;
+  color: #000000;
+}
+body.online-doctor #doctorProfilePage .other-doctors-wrapper .other-doctors-container ul#otherDoctors li .info-wrapper .line {
+  background: #f0505a;
+  width: 100px;
+  height: 3px;
+  margin: 20px 0 18px;
+}
+body.online-doctor #doctorProfilePage .other-doctors-wrapper .other-doctors-container ul#otherDoctors li .info-wrapper .professions {
+  font-size: 18px;
+  font-weight: normal;
+}
+body.online-doctor #doctorProfilePage .other-doctors-wrapper .title-container {
+  border-top: 1px dotted #00aabe;
+}
+body.online-doctor #doctorProfilePage .other-doctors-wrapper .title-container .title {
+  font-size: 34px;
+  font-weight: normal;
+  font-family: 'CirceRounded';
+  color: #000000;
+  line-height: 1;
+  margin-bottom: 42px;
+}
+body.online-doctor #doctorProfilePage .other-doctors-wrapper .avatar-block {
+  width: 260px;
+  height: 260px;
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid #edf0f1;
+}
+body.online-doctor #doctorProfilePage .other-doctors-wrapper .avatar-block a {
+  display: block;
+}
+body.online-doctor #doctorProfilePage .other-doctors-wrapper .avatar-block a img {
+  width: 100%;
+}
+body.online-doctor #doctorProfilePage .notice-wrapper .notice {
+  font-family: 'CirceRounded';
+  color: #000000;
+}
+body.online-doctor #doctorProfilePage .tab-content {
+  display: none;
+}
+body.online-doctor #doctorProfilePage .tab-content.active {
+  display: block;
+}
+body.online-doctor #privacy-content .title-wrapper {
+  margin-bottom: 0;
+}
+body.online-doctor #privacy-content .title-wrapper .title {
+  font-size: 48px;
+  font-weight: normal;
+  font-family: 'CirceRounded';
+  color: #00aabe;
+}
+body.online-doctor #privacy-content .privacy-wrapper .privacy-item {
+  border-bottom: 1px dotted #00aabe;
+}
+body.online-doctor #privacy-content .privacy-wrapper .privacy-item:last-child {
+  border-bottom: 0;
+}
+body.online-doctor #privacy-content .privacy-wrapper .privacy-item .title {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 24px;
+  color: #000000;
+}
+body.online-doctor #privacy-content .privacy-wrapper .privacy-item .title .read-privacy-page {
+  color: #000000;
+  text-decoration: underline;
+}
+body.online-doctor #privacy-content .privacy-wrapper .privacy-item .title .read-privacy-page i {
+  display: none;
+}
+body.online-doctor #privacy-content .privacy-wrapper .privacy-item .description {
+  color: #000000;
+  font-weight: normal;
+  line-height: 22px;
+}
+body.online-doctor #agreementPageWrapper .title-wrapper .title {
+  font-size: 48px;
+  font-weight: normal;
+  font-family: 'CirceRounded';
+  color: #00aabe;
+}
+body.online-doctor #agreementPageWrapper .article {
+  font-weight: normal;
+}
+body.online-doctor #contactPageWrapper .title-wrapper .title {
+  max-width: 750px;
+  vertical-align: top;
+}
+body.online-doctor #contactPageWrapper .contacts-wrapper .title {
+  font-size: 34px;
+  margin-top: 0;
+}
+body.online-doctor #contactPageWrapper .contacts-wrapper .intro {
+  font-weight: normal;
+}
+body.online-doctor #contactPageWrapper .contacts-wrapper .contact-row {
+  margin: 20px 0;
+}
+body.online-doctor #contactPageWrapper .contacts-wrapper .contact-row:not(:first-child) {
+  margin: 0;
+}
+body.online-doctor #contactPageWrapper .contacts-wrapper .contact-row .contact-label {
+  font-size: 18px;
+  line-height: 31px;
+}
+body.online-doctor #contactPageWrapper .contacts-wrapper .contact-row .value {
+  font-size: 18px;
+}
+body.online-doctor #contactPageWrapper .leave-feedback-wrapper .title {
+  font-size: 34px;
+  margin-top: 0;
+  margin-bottom: 22px;
+}
+body.online-doctor #contactPageWrapper .leave-feedback-wrapper .intro {
+  font-weight: normal;
+}
+body.online-doctor #contactPageWrapper .leave-feedback-wrapper .intro .ext-input {
+  border: 0;
+  height: auto;
+}
+body.online-doctor #contactPageWrapper .leave-feedback-wrapper .intro .ext-input .error-wrapper {
+  float: right;
+}
+body.online-doctor #contactPageWrapper .leave-feedback-wrapper .intro .ext-input .label-wrapper {
+  position: static;
+  text-align: left;
+  float: left;
+}
+body.online-doctor #contactPageWrapper .leave-feedback-wrapper .intro .ext-input .label-wrapper .label-text {
+  display: block;
+  font-family: 'CirceRounded';
+  font-size: 18px;
+  color: #000000;
+}
+body.online-doctor #contactPageWrapper .leave-feedback-wrapper .intro .ext-input .input-wrapper {
+  position: static;
+}
+body.online-doctor #contactPageWrapper .leave-feedback-wrapper .intro .ext-input .input-wrapper input[type="text"],
+body.online-doctor #contactPageWrapper .leave-feedback-wrapper .intro .ext-input .input-wrapper textarea {
+  font-family: 'CirceRounded';
+  font-size: 18px;
+  border: 1px solid #00aabe;
+  position: relative;
+  -webkit-border-radius: 15px 15px 15px 15px;
+  -moz-border-radius: 15px 15px 15px 15px;
+  -o-border-radius: 15px 15px 15px 15px;
+  -khtml-border-radius: 15px 15px 15px 15px;
+  border-radius: 15px 15px 15px 15px;
+  behavior: url(../../css/PIE.htc);
+  width: 100%;
+  height: 33px;
+  padding: 0 10px 0;
+  margin: 10px 0;
+}
+body.online-doctor #contactPageWrapper .leave-feedback-wrapper .intro .ext-input .input-wrapper textarea {
+  height: 123px;
+}
+body.online-doctor #contactPageWrapper .leave-feedback-wrapper .buttons-wrapper {
+  margin: 0 auto 20px;
+  text-align: left;
+}
+body.online-doctor #contactPageWrapper .leave-feedback-wrapper .buttons-wrapper .button-style.send {
+  width: 200px;
+  font-family: 'CirceRounded';
+  font-size: 18px;
+  background: #00aabe;
+  height: 32px;
+  line-height: 32px;
+}
+body.online-doctor #contactPageWrapper .leave-feedback-wrapper .buttons-wrapper .button-style.send:hover {
+  background-color: #006672;
+}
+body.online-doctor #contactPageWrapper .leave-feedback-wrapper .buttons-wrapper .button-style.sending {
+  background-color: #97a4a8;
+}
+body.online-doctor #contactPageWrapper .leave-feedback-wrapper .buttons-wrapper .button-style.sending:hover {
+  background-color: #97a4a8;
+}
+body.online-doctor #registerFormModal .agree-wrapper .v-aligner .link-to-privacy {
+  font-size: 16px;
+}
+body.online-doctor #confirmCreation .modal-header .creation-title {
+  font-weight: bold;
+  padding-bottom: 4px;
+  border-bottom: 3px solid #f0505a;
+}
+body.online-doctor #confirmCreation .modal-header .creation-title .heading {
+  font-family: 'CirceRounded';
+}
+body.online-doctor #confirmCreation .modal-body .doctor .avatar-cont {
+  background-image: url('../../images/onlinedoctor/specialist_icon.png');
+}
+body.online-doctor #confirmCreation .modal-body .doctor .info-cont .info .name {
+  font-family: 'CirceRounded';
+  color: #000000;
+}
+body.online-doctor #confirmCreation .modal-body .doctor .info-cont .info .profession {
+  font-family: 'CirceRounded';
+}
+body.online-doctor #confirmCreation .modal-body .order-wrapper .info-cont {
+  height: 75px;
+}
+body.online-doctor #confirmCreation .modal-body .order-wrapper .info-cont .info {
+  font-family: 'CirceRounded';
+  color: #000000;
+}
+body.online-doctor #confirmCreation .modal-body .order-wrapper .info-cont .info .description {
+  color: #000000;
+  line-height: 20px;
+}
+body.online-doctor #confirmCreation .modal-body .order-wrapper .info-cont .info .description .price {
+  color: #000000;
+  line-height: 20px;
+}
+body.online-doctor #confirmCreation .modal-body .order-wrapper .info-cont .info .current-balance {
+  color: #000000;
+}
+body.online-doctor #confirmCreation .modal-body .order-wrapper .info-cont .info .current-balance .balance {
+  color: #000000;
+}
+body.online-doctor #confirmCreation .modal-body .order-wrapper .info-cont .info .will-charge {
+  color: #000000;
+}
+body.online-doctor #confirmCreation .modal-body .order-wrapper .info-cont .info .will-charge .price {
+  color: #000000;
+}
+body.online-doctor #confirmCreation .modal-body .checkbox-cont .agree .checkboxDiv {
+  background-position: 0 0;
+  width: 16px;
+  height: 16px;
+}
+body.online-doctor #confirmCreation .modal-body .checkbox-cont .agree .checkboxDiv:hover {
+  background-position: -32px 0;
+}
+body.online-doctor #confirmCreation .modal-body .checkbox-cont .agree.selected .checkboxDiv {
+  background-position: -16px 0;
+}
+body.online-doctor #confirmCreation .modal-body .checkbox-cont .agree-text {
+  color: #000000;
+}
+body.online-doctor #confirmCreation .modal-footer .buttons-wrapper #createOnDuty {
+  font-size: 18px;
+}
+body.online-doctor #confirmCreation .modal-footer .buttons-wrapper #openPromoFields {
+  font-size: 18px;
+}
+body.online-doctor #inputPromoModal .modal-header .creation-title {
+  text-align: left;
+  line-height: 30px;
+  border-bottom: 3px solid #f0505a;
+  padding-bottom: 6px;
+}
+body.online-doctor #inputPromoModal .modal-header .creation-title .heading {
+  font-family: 'CirceRounded';
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+}
+body.online-doctor #inputPromoModal .modal-body .set-promo-invitation-container .set-promo-invitation {
+  font-size: 20px;
+  font-family: 'CirceRounded';
+}
+body.online-doctor #inputPromoModal .modal-body #promokodInputContainer {
+  border-bottom: 1px solid #8c8c8c;
+}
+body.online-doctor #inputPromoModal .modal-body .notice-wrapper {
+  margin: 15px 0;
+}
+body.online-doctor #inputPromoModal .modal-body .notice-wrapper .notice {
+  font-size: 16px;
+  font-family: 'CirceRounded';
+  color: #000000;
+}
+body.online-doctor #inputPromoModal .modal-footer .buttons-wrapper .btn-5 {
+  background-color: #00aabe;
+  color: #ffffff;
+  border: 0;
+}
+body.online-doctor #inputPromoModal .modal-footer .buttons-wrapper .btn-5:hover {
+  background-color: #006672;
+}
+body.online-doctor #inputPromoModal .modal-footer .buttons-wrapper .btn-5.inactive {
+  background-color: #97a4a8;
+}
+body.online-doctor #inputPromoModal .modal-footer .buttons-wrapper .btn-3 {
+  background: #f0505a;
+  border: 0;
+  border-radius: 15px;
+  color: #ffffff;
+  padding: 0 20px;
+  position: relative;
+}
+body.online-doctor #inputPromoModal .modal-footer .buttons-wrapper .btn-3:hover {
+  background-color: #e01320;
+}
+body.online-doctor #inputPromoModal .modal-footer .buttons-wrapper #payForPromo {
+  height: 32px;
+  line-height: 32px;
+  font-family: 'CirceRounded';
+}
+body.online-doctor #inputPromoModal .modal-footer .buttons-wrapper #payForChosenPromo {
+  height: 32px;
+  line-height: 32px;
+  font-family: 'CirceRounded';
+}
+body.online-doctor #inputPromoModal .modal-footer .buttons-wrapper #openPaymentFields {
+  height: 32px;
+  line-height: 32px;
+  font-family: 'CirceRounded';
+}
+body.online-doctor #confirmRequestCreationModal .modal-header .creation-title {
+  text-align: left;
+  border-bottom: 3px solid #f0505a;
+  padding-bottom: 6px;
+}
+body.online-doctor #confirmRequestCreationModal .modal-header .creation-title .heading {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+  font-family: 'CirceRounded';
+}
+body.online-doctor #confirmRequestCreationModal .modal-header .creation-title .date {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+  font-family: 'CirceRounded';
+}
+body.online-doctor #confirmRequestCreationModal .modal-body .doctor .avatar-cont {
+  position: relative;
+  -webkit-border-radius: 0 0 0 0;
+  -moz-border-radius: 0 0 0 0;
+  -o-border-radius: 0 0 0 0;
+  -khtml-border-radius: 0 0 0 0;
+  border-radius: 0 0 0 0;
+  behavior: url(../../css/PIE.htc);
+}
+body.online-doctor #confirmRequestCreationModal .modal-body .doctor .info-cont .info .name {
+  font-family: 'CirceRounded';
+  color: #000000;
+}
+body.online-doctor #confirmRequestCreationModal .modal-body .doctor .info-cont .info .profession {
+  font-family: 'CirceRounded';
+  color: #000000;
+}
+body.online-doctor #confirmRequestCreationModal .modal-body .order-wrapper .info-cont .info {
+  font-family: 'CirceRounded';
+  color: #000000;
+}
+body.online-doctor #confirmRequestCreationModal .modal-body .order-wrapper .info-cont .info .current-balance {
+  color: #000000;
+}
+body.online-doctor #confirmRequestCreationModal .modal-body .order-wrapper .info-cont .info .will-charge {
+  color: #000000;
+}
+body.online-doctor #confirmRequestCreationModal .modal-body .checkbox-cont .agree .checkboxDiv {
+  background-position: 0 0;
+  width: 16px;
+  height: 16px;
+}
+body.online-doctor #confirmRequestCreationModal .modal-body .checkbox-cont .agree .checkboxDiv:hover {
+  background-position: -32px 0;
+}
+body.online-doctor #confirmRequestCreationModal .modal-body .checkbox-cont .agree.selected .checkboxDiv {
+  background-position: -16px 0;
+}
+body.online-doctor #confirmRequestCreationModal .modal-body .checkbox-cont .agree-text {
+  color: #000000;
+  margin-bottom: 0;
+}
+body.online-doctor #confirmRequestCreationModal .modal-body .checkbox-cont .agree-text a {
+  text-decoration: underline;
+}
+body.online-doctor #confirmRequestCreationModal .modal-body .checkbox-cont .agree-text a:hover {
+  text-decoration: none;
+}
+body.online-doctor #confirmRequestPostponeModal .modal-header .creation-title {
+  padding: 30px 0 6px;
+  text-align: left;
+  border-bottom: 3px solid #f0505a;
+}
+body.online-doctor #confirmRequestPostponeModal .modal-header .creation-title .heading {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+  font-family: 'CirceRounded';
+}
+body.online-doctor #confirmRequestPostponeModal .modal-header .creation-title .date {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+  font-family: 'CirceRounded';
+}
+body.online-doctor #confirmRequestPostponeModal .modal-body .doctor .avatar-cont {
+  position: relative;
+  -webkit-border-radius: 0 0 0 0;
+  -moz-border-radius: 0 0 0 0;
+  -o-border-radius: 0 0 0 0;
+  -khtml-border-radius: 0 0 0 0;
+  border-radius: 0 0 0 0;
+  behavior: url(../../css/PIE.htc);
+}
+body.online-doctor #confirmRequestPostponeModal .modal-body .doctor .info-cont .info {
+  font-family: 'CirceRounded';
+}
+body.online-doctor #confirmRequestPostponeModal .modal-body .doctor .info-cont .info .name {
+  color: #000000;
+}
+body.online-doctor #confirmRequestPostponeModal .modal-body .doctor .info-cont .info .profession {
+  color: #000000;
+}
+body.online-doctor #helpPageWrapper .help-cat {
+  margin-right: 120px;
+}
+body.online-doctor #helpPageWrapper .help-cat.last {
+  margin-right: 0;
+}
+body.online-doctor #helpPageWrapper .help-cat h1.title {
+  font-size: 40px;
+}
+body.online-doctor #helpPageWrapper .help-cat .help-block .faq ul.categories li {
+  font-weight: normal;
+  color: #000000;
+}
+body.online-doctor #helpArticleWrapper h1.title {
+  font-size: 40px;
+}
+body.online-doctor #helpArticleWrapper .article-wrapper {
+  font-weight: normal;
+}
+body.online-doctor .my-documents .document-item {
+  width: 260px;
+  margin-right: 50px;
+}
+body.online-doctor .my-documents .document-item:nth-child(3n+3) {
+  margin-right: 0;
+}
+body.online-doctor .my-documents .document-item .thumb-wrapper {
+  height: 260px;
+}
+/*<slide1>*/
+#slide-1 {
+  position: relative;
+  max-height: 650px;
+  overflow: hidden;
+}
+#slide-1 .content {
+  left: 50%;
+  margin-left: -582px;
+  margin-top: -218px;
+  position: absolute;
+  top: 50%;
+}
+#slide-1 .bg-video {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: -9999;
+}
+#slide-1 .info-block {
+  background: rgba(0, 170, 190, 0.5);
+  width: 457px;
+  height: 348px;
+  padding: 30px 40px 45px;
+  position: relative;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -o-border-radius: 20px 20px 20px 20px;
+  -khtml-border-radius: 20px 20px 20px 20px;
+  border-radius: 20px 20px 20px 20px;
+  behavior: url(../../css/PIE.htc);
+  color: #ffffff;
+  font-weight: normal;
+  line-height: 52px;
+  box-sizing: content-box;
+}
+#slide-1 .info-block .title {
+  font-size: 48px;
+}
+#slide-1 .info-block .description {
+  font-size: 18px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+#slide-1 .info-block .line {
+  background: #ffffff;
+  position: relative;
+  -webkit-border-radius: 6px 6px 6px 6px;
+  -moz-border-radius: 6px 6px 6px 6px;
+  -o-border-radius: 6px 6px 6px 6px;
+  -khtml-border-radius: 6px 6px 6px 6px;
+  border-radius: 6px 6px 6px 6px;
+  behavior: url(../../css/PIE.htc);
+  width: 338px;
+  height: 6px;
+  margin: 15px 0;
+}
+/*</slide1>*/
+/*<slide2>*/
+#slide-2 {
+  background: #ffffff;
+  padding: 30px 0;
+  text-align: center;
+}
+#slide-2 .title {
+  font-size: 48px;
+  font-weight: normal;
+  text-align: center;
+}
+#slide-2 .service {
+  font-size: 18px;
+  margin: 40px 0 10px;
+}
+#slide-2 .service .s-block {
+  width: 310px;
+  text-align: center;
+  vertical-align: top;
+}
+#slide-2 .service .s-block .name {
+  font-size: 24px;
+  font-weight: bold;
+}
+#slide-2 .service .s-block .line {
+  width: 85px;
+  height: 3px;
+  background: #f0505a;
+  margin: 10px auto;
+}
+#slide-2 .service .s-block .description {
+  font-weight: normal;
+}
+#slide-2 .service .s-block .icon {
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: auto auto 10px;
+  height: 85px;
+}
+#slide-2 .service .s-block .icon.icon-1 {
+  background-image: url('../../images/onlinedoctor/help_icon.png');
+  width: 98px;
+}
+#slide-2 .service .s-block .icon.icon-2 {
+  background-image: url('../../images/onlinedoctor/analyses_icon.png');
+  width: 107px;
+}
+#slide-2 .service .s-block .icon.icon-3 {
+  background-image: url('../../images/onlinedoctor/specialist_icon.png');
+  width: 76px;
+}
+/*</slide2>*/
+/*<slide3>*/
+#slide-3 {
+  background: #00aabe;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.4);
+  padding: 50px 0;
+  text-align: center;
+}
+#slide-3 .usd {
+  background-image: url('../../images/onlinedoctor/usd.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 67px;
+  height: 73px;
+  margin: auto;
+}
+#slide-3 .title {
+  text-align: center;
+  color: #ffffff;
+  font-size: 48px;
+  line-height: 48px;
+  margin: 20px 0 30px;
+}
+/*</slide3>*/
+/*<slide4>*/
+#slide-4 {
+  text-align: left;
+  position: relative;
+}
+#slide-4 .doctors-info .rotator-block {
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 70px 0 100px;
+}
+#slide-4 .doctors-info .rotator-block.doctor-1 {
+  background-image: url('../../images/onlinedoctor/chursin.jpg');
+}
+#slide-4 .doctors-info .rotator-block.doctor-2 {
+  background-image: url('../../images/onlinedoctor/indjikyan.jpg');
+}
+#slide-4 .doctors-info .rotator-block.doctor-3 {
+  background-image: url('../../images/onlinedoctor/doctor.png');
+}
+#slide-4 .doctors-info .rotator-block .info-block {
+  background: rgba(0, 170, 190, 0.5);
+  display: inline-block;
+  width: 417px;
+  height: 410px;
+  position: relative;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -o-border-radius: 20px 20px 20px 20px;
+  -khtml-border-radius: 20px 20px 20px 20px;
+  border-radius: 20px 20px 20px 20px;
+  behavior: url(../../css/PIE.htc);
+  font-size: 18px;
+  font-weight: normal;
+  color: #ffffff;
+  text-align: left;
+  padding: 30px 30px;
+  box-sizing: content-box;
+}
+#slide-4 .doctors-info .rotator-block .info-block .title {
+  line-height: 1;
+}
+#slide-4 .doctors-info .rotator-block .info-block .line {
+  background: #ffffff;
+  width: 100%;
+  height: 3px;
+  margin: 15px 0 25px;
+  position: relative;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -o-border-radius: 20px 20px 20px 20px;
+  -khtml-border-radius: 20px 20px 20px 20px;
+  border-radius: 20px 20px 20px 20px;
+  behavior: url(../../css/PIE.htc);
+}
+#slide-4 .doctors-info .rotator-block .info-block .name {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 36px;
+}
+#slide-4 .doctors-info .rotator-block .info-block .about {
+  margin: 20px 0;
+  font-size: 15px;
+}
+#slide-4 .doctors-info .rotator-block .info-block .show-more a {
+  color: inherit;
+  text-decoration: underline;
+}
+#slide-4 #doctor-arrows {
+  position: absolute;
+  padding: 0;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  margin-left: -582px;
+}
+#slide-4 #doctor-arrows .arrow {
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  margin-top: -37px;
+  width: 39px;
+  height: 75px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.2s ease-in-out 0s;
+  -moz-transition: opacity 0.2s ease-in-out 0s;
+  -ms-transition: opacity 0.2s ease-in-out 0s;
+  -o-transition: opacity 0.2s ease-in-out 0s;
+  transition: opacity 0.2s ease-in-out 0s;
+}
+#slide-4 #doctor-arrows .arrow:hover {
+  opacity: 1;
+}
+#slide-4 #doctor-arrows .arrow.prev {
+  background-image: url('../../images/onlinedoctor/arrows/left.png');
+  left: -20px;
+}
+#slide-4 #doctor-arrows .arrow.next {
+  background-image: url('../../images/onlinedoctor/arrows/right.png');
+  right: -20px;
+}
+/*</slide4>*/
+/*<slide5>*/
+#slide-5 {
+  background: #ffffff;
+  box-shadow: inset 0 10px 50px rgba(0, 0, 0, 0.2);
+}
+#slide-5 .content {
+  position: relative;
+  padding: 60px 20px;
+}
+#slide-5 .text {
+  width: 710px;
+  padding-left: 60px;
+  font-weight: normal;
+}
+#slide-5 .text .quote {
+  font-size: 36px;
+  line-height: 40px;
+}
+#slide-5 .text .line {
+  background: #f0505a;
+  width: 99px;
+  height: 6px;
+  position: relative;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -o-border-radius: 20px 20px 20px 20px;
+  -khtml-border-radius: 20px 20px 20px 20px;
+  border-radius: 20px 20px 20px 20px;
+  behavior: url(../../css/PIE.htc);
+  margin: 50px 0 4px;
+}
+#slide-5 .text .author {
+  font-size: 18px;
+}
+#slide-5 .doctor {
+  background: url('../../images/onlinedoctor/roshal_photo.png') no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  width: 572px;
+  height: 480px;
+  position: absolute;
+  right: -20px;
+  bottom: 0;
+}
+/*</slide5>*/
+/*<slide6>*/
+#slide-6 {
+  padding: 30px 0 40px;
+}
+#slide-6 .title {
+  color: #00aabe;
+  font-size: 48px;
+  font-weight: normal;
+  line-height: 48px;
+  text-align: left;
+  text-indent: -2px;
+}
+#slide-6 .reviews {
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+#slide-6 .reviews .review-block {
+  display: inline-block;
+  vertical-align: top;
+  width: 407px;
+  padding-right: 30px;
+  color: #000000;
+}
+#slide-6 .reviews .review-block .name {
+  font-size: 24px;
+  font-weight: bold;
+}
+#slide-6 .reviews .review-block .name a {
+  color: inherit;
+}
+#slide-6 .reviews .review-block .name a:hover {
+  color: #00aabe;
+}
+#slide-6 .reviews .review-block .stars {
+  margin: 5px 0 10px;
+}
+#slide-6 .reviews .review-block .stars > span {
+  background: url('../../images/onlinedoctor/stars.png') no-repeat;
+  background-position: -21px -1px;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+#slide-6 .reviews .review-block .stars > span.fill {
+  background-position: -1px -1px;
+}
+#slide-6 .reviews .review-block .text {
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 20px;
+}
+#slide-6 .reviews .arrow {
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  margin-top: -37px;
+  width: 39px;
+  height: 75px;
+  cursor: pointer;
+  background-image: url('../../images/onlinedoctor/arrows/l_r_arrows.png');
+  background-repeat: no-repeat;
+}
+#slide-6 .reviews .arrow.prev {
+  left: -70px;
+}
+#slide-6 .reviews .arrow.prev:hover {
+  background-position: 0 -75px;
+}
+#slide-6 .reviews .arrow.next {
+  background-position: -39px 0;
+  right: -70px;
+}
+#slide-6 .reviews .arrow.next:hover {
+  background-position: -39px -75px;
+}
+/*</slide6>*/
+/*<slide7>*/
+#slide-7 {
+  color: #ffffff;
+  font-weight: normal;
+  text-align: center;
+  position: relative;
+  padding: 40px 0;
+}
+#slide-7 #promo-video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#slide-7 .overlay {
+  background: url('../../images/onlinedoctor/pixel-overlay.png') repeat;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#slide-7 .static-img {
+  position: absolute;
+  background: url('../../images/onlinedoctor/video.jpg') no-repeat;
+  background-size: cover;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+#slide-7 .content {
+  position: relative;
+  z-index: 200;
+}
+#slide-7 .title {
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: 1px;
+}
+#slide-7 .play-button {
+  background: url('../../images/onlinedoctor/play_icon.png') no-repeat;
+  background-size: contain;
+  width: 113px;
+  height: 113px;
+  margin: 30px auto 20px;
+  cursor: pointer;
+}
+#slide-7 .description {
+  font-size: 18px;
+  width: 540px;
+  margin: 40px auto;
+}
+#slide-7 .description p {
+  margin-bottom: 20px;
+}
+/*</slide7>*/
+/*<slide8>*/
+#slide-8 {
+  padding: 40px 0 20px;
+}
+#slide-8 .title {
+  color: #00aabe;
+  font-size: 48px;
+  font-weight: normal;
+  line-height: 48px;
+  text-indent: -2px;
+}
+#slide-8 .help {
+  margin-top: 30px;
+}
+#slide-8 .help .illness-block {
+  width: 190px;
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 30px;
+  vertical-align: top;
+}
+#slide-8 .help .illness-block .icon-block {
+  background: #ffffff;
+  width: 190px;
+  height: 190px;
+  overflow: hidden;
+  position: relative;
+}
+#slide-8 .help .illness-block .icon-block:hover::after {
+  border-color: transparent;
+}
+#slide-8 .help .illness-block .icon-block:hover .description-overlay {
+  opacity: 1;
+}
+#slide-8 .help .illness-block .icon-block .description-overlay {
+  background: rgba(0, 170, 190, 0.9);
+  width: 100%;
+  height: 100%;
+  padding: 53px 10px 10px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 22px;
+  cursor: default;
+  opacity: 0;
+  position: relative;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -o-border-radius: 20px 20px 20px 20px;
+  -khtml-border-radius: 20px 20px 20px 20px;
+  border-radius: 20px 20px 20px 20px;
+  behavior: url(../../css/PIE.htc);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  -webkit-transition: opacity 0.3s ease-in-out 0s;
+  -moz-transition: opacity 0.3s ease-in-out 0s;
+  -ms-transition: opacity 0.3s ease-in-out 0s;
+  -o-transition: opacity 0.3s ease-in-out 0s;
+  transition: opacity 0.3s ease-in-out 0s;
+}
+#slide-8 .help .illness-block .icon-block::before {
+  content: "";
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 35px auto auto;
+}
+#slide-8 .help .illness-block .icon-block::after {
+  content: "";
+  display: block;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #939598;
+  position: relative;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -o-border-radius: 20px 20px 20px 20px;
+  -khtml-border-radius: 20px 20px 20px 20px;
+  border-radius: 20px 20px 20px 20px;
+  behavior: url(../../css/PIE.htc);
+  position: absolute;
+  -webkit-transition: border 0.3s ease-in-out 0s;
+  -moz-transition: border 0.3s ease-in-out 0s;
+  -ms-transition: border 0.3s ease-in-out 0s;
+  -o-transition: border 0.3s ease-in-out 0s;
+  transition: border 0.3s ease-in-out 0s;
+}
+#slide-8 .help .illness-block .icon-block.type-1::before {
+  background-image: url('../../images/onlinedoctor/help-icons/icon-1.png');
+  width: 122px;
+  height: 122px;
+}
+#slide-8 .help .illness-block .icon-block.type-2::before {
+  background-image: url('../../images/onlinedoctor/help-icons/icon-2.png');
+  width: 117px;
+  height: 118px;
+}
+#slide-8 .help .illness-block .icon-block.type-3::before {
+  background-image: url('../../images/onlinedoctor/help-icons/icon-3.png');
+  width: 86px;
+  height: 129px;
+  margin-top: 30px;
+}
+#slide-8 .help .illness-block .icon-block.type-4::before {
+  background-image: url('../../images/onlinedoctor/help-icons/icon-4.png');
+  width: 76px;
+  height: 125px;
+  margin-top: 32px;
+}
+#slide-8 .help .illness-block .icon-block.type-5::before {
+  background-image: url('../../images/onlinedoctor/help-icons/icon-5.png');
+  width: 100px;
+  height: 124px;
+}
+#slide-8 .help .illness-block .icon-block.type-6::before {
+  background-image: url('../../images/onlinedoctor/help-icons/icon-6.png');
+  width: 96px;
+  height: 123px;
+  margin-top: 30px;
+}
+#slide-8 .help .illness-block .icon-block.type-7::before {
+  background-image: url('../../images/onlinedoctor/help-icons/icon-7.png');
+  width: 103px;
+  height: 115px;
+}
+#slide-8 .help .illness-block .icon-block.type-8::before {
+  background-image: url('../../images/onlinedoctor/help-icons/icon-8.png');
+  width: 132px;
+  height: 109px;
+  margin-top: 42px;
+}
+#slide-8 .help .illness-block .icon-block.type-9::before {
+  background-image: url('../../images/onlinedoctor/help-icons/icon-9.png');
+  width: 112px;
+  height: 110px;
+  margin-top: 40px;
+}
+#slide-8 .help .illness-block .icon-block.type-10::before {
+  background-image: url('../../images/onlinedoctor/help-icons/icon-10.png');
+  width: 67px;
+  height: 120px;
+}
+#slide-8 .help .illness-block .illness-name {
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 22px;
+  color: #000000;
+  margin-top: 10px;
+}
+/*</slide8>*/
+/*<slide9>*/
+#slide-9 {
+  padding: 40px 0;
+}
+#slide-9 .title {
+  color: #00aabe;
+  font-size: 48px;
+  font-weight: normal;
+  line-height: 48px;
+  text-indent: -4px;
+}
+#slide-9 .questions {
+  color: #000000;
+  margin: 30px 0 50px 0;
+}
+#slide-9 .questions .question-block {
+  width: 312px;
+  text-align: left;
+  vertical-align: top;
+}
+#slide-9 .questions .question-block .q-title {
+  font-size: 24px;
+}
+#slide-9 .questions .question-block .line {
+  background: #f0505a;
+  width: 99px;
+  height: 3px;
+  margin: 10px 0;
+  position: relative;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -o-border-radius: 20px 20px 20px 20px;
+  -khtml-border-radius: 20px 20px 20px 20px;
+  border-radius: 20px 20px 20px 20px;
+  behavior: url(../../css/PIE.htc);
+}
+#slide-9 .questions .question-block .q-text {
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 20px;
+}
+#slide-9 .questions .question-block .q-text a {
+  font-weight: bold;
+  color: inherit;
+}
+#slide-9 .questions .question-block .q-text a:hover {
+  text-decoration: underline;
+}
+#slide-9 .questions .question-block .q-text strong {
+  font-weight: bold;
+}
+/*</slide9>*/
+/*<slide10>*/
+#slide-10 {
+  background: url('../../images/onlinedoctor/bg2.jpg') no-repeat;
+  background-size: cover;
+  padding: 50px 0 30px;
+  color: #ffffff;
+  font-weight: normal;
+}
+#slide-10 .title {
+  font-size: 48px;
+  line-height: 48px;
+}
+#slide-10 .line-big {
+  background: #ffffff;
+  width: 485px;
+  height: 6px;
+  margin: 10px 0;
+  position: relative;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -o-border-radius: 20px 20px 20px 20px;
+  -khtml-border-radius: 20px 20px 20px 20px;
+  border-radius: 20px 20px 20px 20px;
+  behavior: url(../../css/PIE.htc);
+}
+#slide-10 .line {
+  background: #ffffff;
+  width: 100%;
+  height: 2px;
+  margin-bottom: 20px;
+  position: relative;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -o-border-radius: 20px 20px 20px 20px;
+  -khtml-border-radius: 20px 20px 20px 20px;
+  border-radius: 20px 20px 20px 20px;
+  behavior: url(../../css/PIE.htc);
+}
+#slide-10 .description {
+  font-size: 18px;
+  line-height: 24px;
+}
+#slide-10 .pay-types {
+  margin: 20px 0 100px;
+}
+#slide-10 .pay-types > * {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+#slide-10 .pay-types .mc {
+  background: url('../../images/onlinedoctor/mc.png') no-repeat;
+  background-size: contain;
+  width: 66px;
+  height: 39px;
+}
+#slide-10 .pay-types .visa {
+  background: url('../../images/onlinedoctor/visa.png') no-repeat;
+  background-size: contain;
+  width: 86px;
+  height: 26px;
+}
+#slide-10 .uniteller > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+#slide-10 .uniteller .u-logo {
+  background: url('../../images/onlinedoctor/uniteller_logo.png') no-repeat;
+  background-size: contain;
+  width: 99px;
+  height: 56px;
+  margin-right: 30px;
+}
+#slide-10 .uniteller .u-description {
+  width: 864px;
+  font-size: 13px;
+}
+/*</slide10>*/
+*::-webkit-media-controls-panel {
+  display: none!important;
+  -webkit-appearance: none;
+}
+/* Old shadow dom for play button */
+*::--webkit-media-controls-play-button {
+  display: none!important;
+  -webkit-appearance: none;
+}
+/* New shadow dom for play button */
+*::-webkit-media-controls-start-playback-button {
+  display: none!important;
+  -webkit-appearance: none;
+}
+* {
+  outline: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  min-width: 1204px;
+}
+body.online-doctor {
+  width: 100%;
+  height: auto;
+  position: relative;
+  min-height: 100%;
+  padding-top: 100px;
+  color: #000000;
+  font-family: 'CirceRounded';
+  font-weight: bold;
+}
+body.online-doctor a {
+  text-decoration: none;
+  font-size: inherit;
+  font-weight: inherit;
+  outline: none;
+}
+body.online-doctor a:hover {
+  text-decoration: none;
+}
+header {
+  min-width: 1204px;
+}
+header #logo {
+  background: url('../../images/onlinedoctor/logo.png') no-repeat;
+  width: 143px;
+  height: 57px;
+}
+header #top-menu > li {
+  color: #000000;
+}
+header #top-menu > li.active,
+header #top-menu > li:hover {
+  color: #08c0de;
+}
+header #top-menu > li a {
+  font-weight: bold;
+}
+header .logged-navigation {
+  background: #4cbaca;
+  height: 30px;
+  margin: 0;
+  overflow: hidden;
+  border: 0;
+}
+header .logged-navigation .nav-menu li {
+  color: #ffffff;
+  font-weight: bold;
+  margin-right: 30px;
+  line-height: 28px;
+}
+header .logged-navigation .nav-menu li.active,
+header .logged-navigation .nav-menu li:hover {
+  color: #000000;
+}
+header .logged-navigation .nav-menu li.history span {
+  background: #f0505a;
+  padding: 2px 7px;
+}
+header .logged-navigation .user-balance-wrapper {
+  background: #00728f;
+  height: 30px;
+}
+header .logged-navigation .user-balance-wrapper .balance-value {
+  line-height: 32px;
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+header .user-profile ul {
+  top: 60px;
+}
+header .user-profile ul li:hover {
+  color: #00aabe;
+}
+header .user-profile .username-wrapper .username {
+  color: #000000;
+  border-bottom: 1px dashed #000000;
+}
+footer {
+  width: 100%;
+  height: 142px;
+  /*min-width: 1204px;
+    position: absolute;
+    bottom: 0;
+    left: 0;*/
+}
+footer.with-border::before {
+  content: "";
+  display: block;
+  background: #00aabe;
+  width: 1064px;
+  height: 3px;
+  margin: auto auto -3px;
+  position: relative;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -o-border-radius: 3px 3px 3px 3px;
+  -khtml-border-radius: 3px 3px 3px 3px;
+  border-radius: 3px 3px 3px 3px;
+  behavior: url(../../css/PIE.htc);
+}
+footer .left-side {
+  font-size: 13px;
+  font-weight: normal;
+}
+footer .left-side .company {
+  color: #939598;
+}
+footer .left-side .company .copy {
+  height: 26px;
+  display: inline-block;
+  vertical-align: middle;
+}
+footer .left-side .footer-menu {
+  list-style: none;
+  color: #00aabe;
+}
+footer .left-side .footer-menu li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+  line-height: 2;
+}
+footer .left-side .footer-menu li a {
+  display: block;
+}
+footer .apps .ios {
+  background: url('../../images/default/appstore-download.png') no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 141px;
+  height: 42px;
+  margin-right: 20px;
+}
+footer .apps .android {
+  background: url('../../images/default/googleplay-download.png') no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 142px;
+  height: 44px;
+}
+footer .apps a {
+  display: inline-block;
+  vertical-align: middle;
+}
+footer .support {
+  font-weight: normal;
+}
+footer .support .label {
+  font-size: 14px;
+  color: #939598;
+  margin-bottom: 6px;
+}
+footer .support .phone {
+  font-size: 24px;
+  color: #00aabe;
+}
+footer .social > div {
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url('../../images/onlinedoctor/social-buttons.png');
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+footer .social > div:first-child {
+  margin-left: 0;
+}
+footer .social > div:hover.vk {
+  background-position: 0 -51px;
+}
+footer .social > div:hover.fb {
+  background-position: -55px -51px;
+}
+footer .social > div:hover.inst {
+  background-position: -111px -51px;
+}
+footer .social > div:hover.youtube {
+  background-position: -222px -51px;
+}
+footer .social > div.fb {
+  background-position: -55px 0;
+}
+footer .social > div.inst {
+  background-position: -111px 0;
+}
+footer .social > div.youtube {
+  background-position: -222px 0;
+}
+footer .social > div a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.title-wrapper {
+  padding: 0;
+  border: 0;
+  margin-bottom: 30px;
+  line-height: 1;
+}
+.title-wrapper.justify .page-title {
+  margin-top: 0;
+}
+.title-wrapper h1.page-title,
+.title-wrapper h1.title {
+  font-size: 48px;
+  font-weight: normal;
+  line-height: 48px;
+  color: #00aabe;
+  margin: 30px 0 0;
+  text-indent: -4px;
+  text-align: left;
+  display: inline-block;
+}
+body.online-doctor {
+  /* Запись на консультацию и история транзакций */
+  /* Проверка связи */
+  /* Загрузка аватарки */
+  /* Контакты */
+  /* Баланс */
+}
+body.online-doctor #container {
+  min-width: 1204px;
+  margin: 0;
+}
+body.online-doctor.logged #container {
+  margin-top: 30px;
+}
+body.online-doctor.logged .breadcrumbs {
+  margin-top: 30px;
+}
+body.online-doctor.logged #compatibilityBar {
+  margin: 30px auto 20px;
+}
+body.online-doctor .inner {
+  width: 1164px;
+  padding: 0 50px;
+}
+body.online-doctor .inner.wide {
+  padding: 0 60px 0 0;
+  width: 1184px;
+}
+body.online-doctor .inner.od-modify {
+  padding: 0;
+  width: 100%;
+}
+body.online-doctor .breadcrumbs {
+  color: #00aabe;
+  font-size: 14px;
+  line-height: 18px;
+}
+body.online-doctor .breadcrumbs a {
+  color: #00aabe;
+  font-size: inherit;
+  font-weight: bold;
+  font-family: 'CirceRounded';
+  text-decoration: underline;
+  vertical-align: top;
+}
+body.online-doctor .breadcrumbs a:hover,
+body.online-doctor .breadcrumbs a:focus,
+body.online-doctor .breadcrumbs a:active,
+body.online-doctor .breadcrumbs a:visited {
+  color: inherit;
+}
+body.online-doctor .breadcrumbs span {
+  vertical-align: top;
+}
+body.online-doctor .breadcrumbs i {
+  background: url('../../images/onlinedoctor/breadcrumb.png') no-repeat;
+  width: 5px;
+  height: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 5px;
+}
+body.online-doctor #loginFormModal .modal-body .login-form .buttons-wrapper .login {
+  font-family: 'CirceRounded';
+  font-size: 20px;
+  width: 100%;
+}
+body.online-doctor #loginFormModal .modal-body .login-form .buttons-wrapper .register {
+  font-family: 'CirceRounded';
+  width: 124px;
+  height: 34px;
+  line-height: 34px;
+  font-size: 14px;
+  font-weight: normal;
+}
+body.online-doctor #forgotPasswordModal .modal-dialog .modal-content .modal-body .buttons-wrapper .cancel {
+  width: 100%;
+  font-family: 'CirceRounded';
+  font-size: 18px;
+}
+body.online-doctor #compatibilityBar .inner {
+  background-color: #4cbaca;
+  background-image: none;
+}
+body.online-doctor #consultationWindow .modal-dialog .modal-content .modal-header,
+body.online-doctor #transactionsHistoryModal .modal-dialog .modal-content .modal-header {
+  border-bottom: 1px solid #e5e5e5;
+}
+body.online-doctor #consultationWindow .modal-dialog .modal-content .modal-header .modal-title,
+body.online-doctor #transactionsHistoryModal .modal-dialog .modal-content .modal-header .modal-title {
+  border-bottom: 0;
+}
+body.online-doctor #confirmCreation .modal-footer .buttons-wrapper #openPromoFields,
+body.online-doctor #confirmRequestCreationModal .modal-footer .buttons-wrapper #openPromoFields,
+body.online-doctor #confirmRequestPostponeModal .modal-footer .buttons-wrapper #openPromoFields,
+body.online-doctor #confirmCreation .modal-footer .buttons-wrapper #createOnDuty,
+body.online-doctor #confirmRequestCreationModal .modal-footer .buttons-wrapper #createOnDuty,
+body.online-doctor #confirmRequestPostponeModal .modal-footer .buttons-wrapper #createOnDuty,
+body.online-doctor #confirmCreation .modal-footer .buttons-wrapper #payForChosen,
+body.online-doctor #confirmRequestCreationModal .modal-footer .buttons-wrapper #payForChosen,
+body.online-doctor #confirmRequestPostponeModal .modal-footer .buttons-wrapper #payForChosen,
+body.online-doctor #confirmCreation .modal-footer .buttons-wrapper #cancelPostpone,
+body.online-doctor #confirmRequestCreationModal .modal-footer .buttons-wrapper #cancelPostpone,
+body.online-doctor #confirmRequestPostponeModal .modal-footer .buttons-wrapper #cancelPostpone,
+body.online-doctor #confirmCreation .modal-footer .buttons-wrapper #confirmPostpone,
+body.online-doctor #confirmRequestCreationModal .modal-footer .buttons-wrapper #confirmPostpone,
+body.online-doctor #confirmRequestPostponeModal .modal-footer .buttons-wrapper #confirmPostpone {
+  font-family: 'CirceRounded';
+  font-size: 18px;
+}
+body.online-doctor #testModuleWrapper .test-block .confirm,
+body.online-doctor #testModuleWrapper .test-block .disclaim {
+  font-size: 18px;
+}
+body.online-doctor #picModal .ajax-file-upload-buttons .pic-modal-upload-close,
+body.online-doctor #picModal .ajax-file-upload-buttons .pic-modal-upload {
+  font-size: 18px;
+}
+body.online-doctor #contactPageWrapper .leave-feedback-wrapper .buttons-wrapper .send {
+  font-family: 'CirceRounded';
+  font-size: 20px;
+}
+body.online-doctor #balancePageWrapper #refillBalanceForm button[type="submit"] {
+  font-family: 'CirceRounded';
+  font-size: 20px;
+}

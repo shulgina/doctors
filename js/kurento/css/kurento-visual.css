@@ -1,0 +1,144 @@
+.kcs-video {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: inherit;
+    overflow: hidden;
+}
+
+.kcs-video.me {
+    border: 3px solid #ffffff;
+    -webkit-border-radius:15px;
+    -moz-border-radius:15px;
+    border-radius:15px;
+    z-index: 0;
+}
+
+.kcs-video .video-background {
+    width: 100%;
+    position: absolute;
+    background: white;
+    height: 100%;
+    object-fit: cover;
+}
+
+.kcs-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.kcs-video.interlocutor .audio-level {
+    position: absolute;
+    top: initial;
+    bottom: 0;
+    left: 0;
+    width: 115px;
+    height: 115px;
+    transform: rotate(180deg);
+    z-index: 2;
+}
+
+.kcs-video.interlocutor .audio-level .audio-value {
+    z-index:1;
+    position: absolute;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+    background-image: radial-gradient(circle, rgba(151, 206, 0, 1) 0, rgba(151, 206, 0, 0) 100%);
+}
+
+.kcs-video.interlocutor .audio-level .audio-img {
+    position: absolute;
+    top: 22%;
+    right: 15%;
+    width: 40%;
+    height: 40%;
+    transform: rotate(180deg);
+    opacity: 0.7;
+    background: url(../img/audioonly-headset.svg) center no-repeat;
+}
+
+.kcs-video.interlocutor .dummy {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+}
+
+.kcs-video.interlocutor .dummy .dummy_message {
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.kcs-video.interlocutor .dummy.network_failed {
+    background: black;
+    display: block;
+}
+
+.kcs-video .test {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
+
+.kcs-video.interlocutor .audio-level .audio-bar {
+    position: absolute;
+    width: 192%;
+    height: 192%;
+    top: -96%;
+    right: -96%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.kcs-video.me .audio-level {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    transform: rotate(180deg);
+    margin-top: 3px;
+    margin-right: 3px;
+}
+
+.kcs-video.me .audio-level .audio-value {
+    position: absolute;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+    background-image: radial-gradient(circle, rgba(151, 206, 0, 1) 0, rgba(151, 206, 0, 0) 100%);
+}
+
+.kcs-video.me .audio-level .audio-img {
+    position: absolute;
+    bottom: 22%;
+    left: 15%;
+    width: 40%;
+    height: 40%;
+    transform: rotate(180deg);
+    opacity: 0.7;
+    background: url(../img/audioonly-headset.svg) center no-repeat;
+}
+
+.kcs-video.me .audio-level .audio-bar {
+    position: absolute;
+    width: 192%;
+    height: 192%;
+    bottom: -96%;
+    left: -96%;
+    opacity: 0.7;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
