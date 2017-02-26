@@ -1,0 +1,969 @@
+/*
+Общие переменные
+*/
+/*
+Общие цвета для всех стилей
+*/
+/*
+Файл с общими функциями
+*/
+/* .transition(all,2s); */
+/**
+Список времени для записи для календаря врача в интерфейсе пациента
+*/
+body.drc {
+  /*
+        Кнопки
+    */
+}
+body.drc .button-style {
+  display: inline-block;
+  vertical-align: middle;
+  min-width: 100px;
+  height: 39px;
+  line-height: 39px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  color: inherit;
+  background-color: inherit;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  padding: 0 20px;
+  margin: 0 auto;
+  border: 0;
+  position: relative;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -o-border-radius: 20px 20px 20px 20px;
+  -khtml-border-radius: 20px 20px 20px 20px;
+  border-radius: 20px 20px 20px 20px;
+  behavior: url(../../css/PIE.htc);
+  -webkit-transition: background 0.2s ease-in-out 0s;
+  -moz-transition: background 0.2s ease-in-out 0s;
+  -ms-transition: background 0.2s ease-in-out 0s;
+  -o-transition: background 0.2s ease-in-out 0s;
+  transition: background 0.2s ease-in-out 0s;
+}
+body.drc .button-style.btn-3,
+body.drc .button-style.btn-4,
+body.drc .button-style.btn-7 {
+  background-color: #f36f21;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+body.drc .button-style.btn-3:hover,
+body.drc .button-style.btn-4:hover,
+body.drc .button-style.btn-7:hover {
+  background-color: rgba(243, 111, 33, 0.8);
+}
+body.drc .button-style.btn-1,
+body.drc .button-style.btn-2,
+body.drc .button-style.btn-5,
+body.drc .button-style.btn-6 {
+  background-color: #41903c;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+body.drc .button-style.btn-1:hover,
+body.drc .button-style.btn-2:hover,
+body.drc .button-style.btn-5:hover,
+body.drc .button-style.btn-6:hover {
+  background-color: rgba(65, 144, 60, 0.8);
+}
+body.drc .button-style.full-width {
+  width: 100%;
+}
+body.drc .button-style.no-border {
+  border: 0;
+}
+body.drc .button-style.inactive,
+body.drc .button-style.sending {
+  background-color: #97a4a8;
+  cursor: not-allowed;
+}
+body.drc .button-style.inactive:hover,
+body.drc .button-style.sending:hover {
+  background-color: #97a4a8;
+}
+body.drc .button-style.small-button {
+  height: 32px;
+  font-size: 18px;
+  line-height: 32px;
+}
+body.drc .button-style.submit-button {
+  font-size: 26px;
+  background-color: #08c0de;
+  color: #ffffff;
+  border-color: #ffffff;
+  width: 280px;
+  margin: 0 10px 30px;
+}
+body.drc .button-style.submit-button:hover,
+body.drc .button-style.submit-button:active {
+  background-color: #f196ce;
+}
+body.drc button.close,
+body.drc div.close,
+body.drc .close-bar {
+  position: absolute;
+  margin: 0;
+  background: url('../../images/default/modal-close.png') no-repeat;
+  background-position: 0 0;
+  right: 20px;
+  top: 20px;
+  height: 14px;
+  width: 14px;
+  outline: none;
+}
+body.drc button.close,
+body.drc div.close,
+body.drc .close-bar,
+body.drc button.close:hover,
+body.drc div.close:hover,
+body.drc .close-bar:hover {
+  opacity: 1;
+}
+body.drc button.close:hover,
+body.drc div.close:hover,
+body.drc .close-bar:hover {
+  background-position: -14px 0;
+}
+body.drc *.button-od {
+  background: #ffffff;
+  display: inline-block;
+  padding: 0 15px;
+  height: 39px;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 39px;
+  border: 0;
+  position: relative;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -o-border-radius: 20px 20px 20px 20px;
+  -khtml-border-radius: 20px 20px 20px 20px;
+  border-radius: 20px 20px 20px 20px;
+  behavior: url(../../css/PIE.htc);
+  cursor: pointer;
+  -webkit-transition: background 0.2s ease-in-out 0s;
+  -moz-transition: background 0.2s ease-in-out 0s;
+  -ms-transition: background 0.2s ease-in-out 0s;
+  -o-transition: background 0.2s ease-in-out 0s;
+  transition: background 0.2s ease-in-out 0s;
+}
+body.drc *.button-od.small {
+  height: 32px;
+  font-size: 18px;
+  line-height: 32px;
+}
+body.drc *.button-od.color-red {
+  background: #f36f21;
+  color: #ffffff;
+}
+body.drc *.button-od.color-red:hover {
+  background: #f36f21;
+}
+body.drc *.button-od.color-red.empty-button {
+  border: 1px solid #f36f21;
+  color: #f36f21;
+}
+body.drc *.button-od.color-red.empty-button:hover {
+  background: none;
+}
+body.drc *.button-od.color-blue {
+  background: #41903c;
+  color: #ffffff;
+}
+body.drc *.button-od.color-blue:hover {
+  background: #41903c;
+}
+body.drc *.button-od.color-blue.empty-button {
+  border: 1px solid #41903c;
+  color: #41903c;
+}
+body.drc *.button-od.color-blue.empty-button:hover {
+  background: none;
+}
+body.drc *.button-od.empty-button {
+  background: none;
+  border-width: 1px;
+  border-style: solid;
+}
+body.drc *.button-od.wide-button {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+body.drc *.button-od-2 {
+  background: #ffffff;
+  display: inline-block;
+  padding: 0 15px;
+  width: 202px;
+  height: 39px;
+  text-align: center;
+  color: #000000;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 39px;
+  border: 0;
+  position: relative;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -o-border-radius: 20px 20px 20px 20px;
+  -khtml-border-radius: 20px 20px 20px 20px;
+  border-radius: 20px 20px 20px 20px;
+  behavior: url(../../css/PIE.htc);
+  cursor: pointer;
+  -webkit-transition: background 0.2s ease-in-out 0s;
+  -moz-transition: background 0.2s ease-in-out 0s;
+  -ms-transition: background 0.2s ease-in-out 0s;
+  -o-transition: background 0.2s ease-in-out 0s;
+  transition: background 0.2s ease-in-out 0s;
+}
+body.drc *.button-od-2.color-red {
+  background: #f36f21;
+  color: #ffffff;
+}
+body.drc *.button-od-2.color-red:hover {
+  background: #f36f21;
+}
+body.drc *.button-od-2.color-red.empty-button {
+  border: 1px solid #f36f21;
+  color: #f36f21;
+}
+body.drc *.button-od-2.color-red.empty-button:hover {
+  background: none;
+}
+body.drc *.button-od-2.color-blue {
+  background: #41903c;
+  color: #ffffff;
+}
+body.drc *.button-od-2.color-blue:hover {
+  background: #41903c;
+}
+body.drc *.button-od-2.color-blue.empty-button {
+  border: 1px solid #41903c;
+  color: #41903c;
+}
+body.drc *.button-od-2.color-blue.empty-button:hover {
+  background: none;
+}
+body.drc *.blue-button {
+  background: #41903c;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: background 0.2s ease-in-out 0s;
+  -moz-transition: background 0.2s ease-in-out 0s;
+  -ms-transition: background 0.2s ease-in-out 0s;
+  -o-transition: background 0.2s ease-in-out 0s;
+  transition: background 0.2s ease-in-out 0s;
+}
+body.drc *.blue-button:hover {
+  background: #41903c;
+  font-size: 18px;
+}
+body.drc *.blue-button:focus,
+body.drc *.blue-button:active {
+  font-size: 18px;
+}
+body.drc #orderChosenWrapper .filters-wrapper .tab-filter > * {
+  color: #f36f21;
+}
+body.drc #orderChosenWrapper .filters-wrapper .tab-filter > *.selected,
+body.drc #orderChosenWrapper .filters-wrapper .tab-filter > *:hover {
+  color: #41903c;
+}
+body.drc #orderChosenWrapper .filters-wrapper .dropdown-filter .dropdown-selector > ul > li:hover {
+  background: rgba(65, 144, 60, 0.1);
+}
+body.drc #orderChosenWrapper .doctors-list .doctor-row {
+  border-bottom: 1px dotted #41903c;
+}
+body.drc #orderChosenWrapper .doctors-list .doctor-row .doctor-info .about-doctor .name:hover {
+  color: #41903c;
+}
+body.drc #orderChosenWrapper .doctors-list .doctor-row .doctor-info .about-doctor .line {
+  background: #f36f21;
+}
+body.drc #orderChosenWrapper .doctors-list .doctor-row .doctor-info .about-doctor .description-wrapper .more-link {
+  color: #f36f21;
+}
+body.drc #orderChosenWrapper .doctors-list .doctor-row .doctor-info .about-doctor .description-wrapper .more-link:hover {
+  color: #41903c;
+}
+body.drc #orderChosenWrapper .doctors-list .doctor-row .consult-info .record-block .price-value {
+  color: #41903c;
+}
+body.drc #doctorProfilePage .nav-tabs li {
+  background: #41903c;
+  color: #ffffff;
+  border-color: #41903c;
+}
+body.drc #doctorProfilePage .nav-tabs li.active {
+  background: #ffffff;
+  color: #41903c;
+}
+body.drc #doctorProfilePage .doctor-info {
+  border-bottom: 1px solid #41903c;
+}
+body.drc #doctorProfilePage #doctorProfileWrapper .description-wrapper {
+  border-bottom: 1px dotted #41903c;
+}
+body.drc #doctorProfilePage #doctorProfileWrapper .description-wrapper .price-container .price {
+  color: #41903c;
+}
+body.drc #doctorProfilePage #doctorProfileWrapper .certificates ul li .image-cont {
+  border-color: #41903c;
+}
+body.drc #doctorProfilePage .other-doctors-wrapper .other-doctors-container .arrow {
+  background: url('../../images/drclinics/arrows/green-arrow.png') no-repeat;
+}
+body.drc #doctorProfilePage .other-doctors-wrapper .other-doctors-container ul#otherDoctors li .info-wrapper .line {
+  background: #f36f21;
+}
+body.drc #doctorProfilePage .other-doctors-wrapper .title-container {
+  border-top: 1px dotted #41903c;
+}
+body.drc .badAccess .titleBadAccess h2 {
+  color: #41903c;
+}
+body.drc .badAccess .errorType h3 {
+  color: #41903c;
+}
+body.drc .badAccess .logo {
+  background: url("/images/drclinics/logo.png") no-repeat scroll center center;
+}
+body.drc #profileWrapper .content-wrapper {
+  border-top: 1px solid #41903c;
+}
+body.drc #profileWrapper .content-wrapper .nav-tabs li {
+  background: #41903c;
+  border-color: #41903c;
+}
+body.drc #profileWrapper .content-wrapper .nav-tabs li.active {
+  color: #41903c;
+}
+body.drc #profileWrapper .content-wrapper #profile-data .profile-settings .profile-settings-wrapper .avatar-wrapper .buttons-wrapper .actions #removeAvatar {
+  color: #f36f21;
+}
+body.drc #profileWrapper .content-wrapper #profile-data .profile-settings .profile-settings-wrapper .profile-form .ext-input .input-wrapper #tmp-phone {
+  border: 1px solid #41903c;
+}
+body.drc #profileWrapper .content-wrapper #profile-data .profile-settings .profile-settings-wrapper .profile-form form#confirmMobileForm {
+  border: 1px solid #f36f21;
+}
+body.drc #profileWrapper .content-wrapper #profile-data .profile-settings .profile-settings-wrapper .profile-form form#confirmMobileForm .info-wrapper .info {
+  color: #41903c;
+}
+body.drc #profileWrapper .content-wrapper #profile-data .profile-settings .profile-settings-wrapper .profile-form form#confirmMobileForm .ext-input .input-wrapper input[type="text"] {
+  border: 1px solid #41903c;
+}
+body.drc #profileWrapper .content-wrapper #profile-data .profile-settings .profile-settings-wrapper .phone-number {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+body.drc #profileWrapper .content-wrapper #profile-data .profile-settings .profile-settings-wrapper .phone-number .label-text {
+  font-size: 18px;
+  line-height: 28px;
+}
+body.drc #profileWrapper .content-wrapper #profile-data .profile-settings .change-password-wrapper #changePasswordForm .ext-input .input-wrapper input[type="password"] {
+  border: 1px solid #41903c;
+}
+body.drc #profileWrapper .content-wrapper #profile-data .sidebar-right .balance-wrapper .balance-value {
+  color: #41903c;
+}
+body.drc #profileWrapper .content-wrapper #profile-data .sidebar-right .partner-programs {
+  background: #41903c;
+}
+body.drc #profileWrapper .content-wrapper #documents-data .documents-wrapper .document-item .doc-info .name:hover {
+  color: #41903c;
+}
+body.drc #privacy-content .title-wrapper .title {
+  color: #41903c;
+}
+body.drc #privacy-content .privacy-wrapper .privacy-item {
+  border-bottom: 1px dotted #41903c;
+}
+body.drc #agreementPageWrapper .title-wrapper .title {
+  color: #41903c;
+}
+body.drc #encyclopediaWrapper .encyclopedy-content .timeline .enc-category {
+  border-bottom: 1px dotted #41903c;
+}
+body.drc #encyclopediaWrapper .encyclopedy-content .timeline .enc-category .article-info .enc-title:hover {
+  color: #41903c;
+}
+body.drc #encyclopediaWrapper .encyclopedy-content .timeline .enc-category .article-info .description a:hover {
+  color: #41903c;
+}
+body.drc #encyclopediaWrapper .encyclopedy-content .category-tags a:hover {
+  color: #41903c;
+}
+body.drc #encyclopediaWrapper .encyclopedy-sidebar ul li :hover,
+body.drc #encyclopediaWrapper .encyclopedy-sidebar ul li.selected {
+  color: #41903c;
+}
+body.drc #encyclopediaWrapper.article-content .article .article-wrapper ul.lines li::before {
+  color: #f36f21;
+}
+body.drc #encyclopediaWrapper.article-content .similar-articles-wrapper {
+  border-top: 1px dotted #41903c;
+}
+body.drc #encyclopediaWrapper.article-content .similar-articles-wrapper .similar-articles li .tags a:hover {
+  color: #41903c;
+}
+body.drc #encyclopediaWrapper.article-content .share-wrapper ul li {
+  background-image: url('../../images/drclinics/social-buttons.png');
+}
+body.drc #slide-1 {
+  background: url('../../images/drclinics/bg1.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 80px 0;
+}
+body.drc #slide-1 .content {
+  position: relative;
+  margin-top: 0;
+  top: 0;
+}
+body.drc #slide-1 .info-block {
+  background: rgba(207, 207, 207, 0.3);
+}
+body.drc #slide-1 .info-block .title {
+  font-size: 42px;
+}
+body.drc #slide-1 .info-block .description {
+  font-size: 26px;
+}
+body.drc #slide-1 .info-block .button-style {
+  width: 290px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 26px;
+  position: relative;
+  -webkit-border-radius: 25px 25px 25px 25px;
+  -moz-border-radius: 25px 25px 25px 25px;
+  -o-border-radius: 25px 25px 25px 25px;
+  -khtml-border-radius: 25px 25px 25px 25px;
+  border-radius: 25px 25px 25px 25px;
+  behavior: url(../../css/PIE.htc);
+}
+body.drc .short-description-slide {
+  text-align: center;
+  font-size: 30px;
+  font-weight: normal;
+  margin-top: 30px;
+}
+body.drc #slide-2 {
+  padding: 20px 0;
+}
+body.drc #slide-2 .service .s-block {
+  margin-bottom: 50px;
+}
+body.drc #slide-2 .service .s-block .line {
+  background: #f36f21;
+}
+body.drc #slide-2 .service .s-block .icon {
+  background-position: center;
+}
+body.drc #slide-2 .service .s-block .icon.icon-1 {
+  background-image: url('../../images/drclinics/icon1.png');
+}
+body.drc #slide-2 .service .s-block .icon.icon-2 {
+  background-image: url('../../images/drclinics/icon2.png');
+}
+body.drc #slide-2 .service .s-block .icon.icon-3 {
+  background-image: url('../../images/drclinics/icon3.png');
+}
+body.drc #slide-2 .service .s-block .icon.icon-4 {
+  background-image: url('../../images/drclinics/icon4.png');
+}
+body.drc #slide-2 .service .s-block .icon.icon-5 {
+  background-image: url('../../images/drclinics/icon5.png');
+}
+body.drc #slide-2 .service .s-block .icon.icon-6 {
+  background-image: url('../../images/drclinics/icon6.png');
+}
+body.drc #slide-4 {
+  text-align: center;
+  padding-bottom: 60px;
+}
+body.drc #slide-4 .title {
+  font-size: 44px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 50px;
+  margin-bottom: 50px;
+}
+body.drc #slide-4 .title div {
+  display: block;
+  margin-top: 40px;
+}
+body.drc #slide-4 .doctors-slider {
+  position: relative;
+}
+body.drc #slide-4 .doctors-team {
+  margin-bottom: 60px;
+}
+body.drc #slide-4 .doctors-team .doctors-block {
+  vertical-align: top;
+  font-size: 20px;
+  font-weight: normal;
+  width: 250px;
+  line-height: 24px;
+  text-align: center;
+}
+body.drc #slide-4 .doctors-team .doctors-block .photo {
+  width: 240px;
+  height: 240px;
+  overflow: hidden;
+  position: relative;
+  -webkit-border-radius: 50% 50% 50% 50%;
+  -moz-border-radius: 50% 50% 50% 50%;
+  -o-border-radius: 50% 50% 50% 50%;
+  -khtml-border-radius: 50% 50% 50% 50%;
+  border-radius: 50% 50% 50% 50%;
+  behavior: url(../../css/PIE.htc);
+  border: 2px solid #f36f21;
+  margin: 0 auto 20px;
+  text-align: center;
+}
+body.drc #slide-4 .doctors-team .doctors-block .photo a {
+  width: 100%;
+  height: 100%;
+}
+body.drc #slide-4 .doctors-team .doctors-block .photo img {
+  height: 100%;
+  margin: auto;
+}
+body.drc #slide-4 .doctors-team .doctors-block a {
+  display: block;
+  width: 210px;
+  margin: auto;
+  font-weight: bold;
+  color: #41903c;
+}
+body.drc #slide-4 .doctors-team .doctors-block a:hover {
+  color: rgba(65, 144, 60, 0.8);
+}
+body.drc #slide-4 .doctors-team .doctors-block ul {
+  margin-top: 10px;
+  list-style: none;
+}
+body.drc #slide-4 .doctors-team .doctors-block .experience {
+  margin-top: 20px;
+}
+body.drc #slide-4 #doctor-arrows {
+  position: absolute;
+  padding: 0;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  margin-left: -582px;
+}
+body.drc #slide-4 #doctor-arrows .arrow {
+  background-image: url('../../images/onlinedoctor/arrows/l_r_arrows.png');
+  background-repeat: no-repeat;
+  background-size: 78px 150px;
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  z-index: 100;
+  top: 125px;
+  width: 39px;
+  height: 75px;
+  cursor: pointer;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.2s ease-in-out 0s;
+  -moz-transition: opacity 0.2s ease-in-out 0s;
+  -ms-transition: opacity 0.2s ease-in-out 0s;
+  -o-transition: opacity 0.2s ease-in-out 0s;
+  transition: opacity 0.2s ease-in-out 0s;
+}
+body.drc #slide-4 #doctor-arrows .arrow:hover {
+  opacity: 1;
+}
+body.drc #slide-4 #doctor-arrows .arrow.prev {
+  left: 0;
+}
+body.drc #slide-4 #doctor-arrows .arrow.next {
+  background-position: -39px 0;
+  right: 0;
+}
+body.drc #slide-8 .title {
+  font-size: 44px;
+  text-align: center;
+  color: #000000;
+}
+body.drc #slide-8 .help {
+  margin-top: 40px;
+}
+body.drc #slide-8 .help .illness-block .icon-block.type-1::before {
+  background-image: url('../../images/drclinics/help-icons/icon-1.png');
+}
+body.drc #slide-8 .help .illness-block .icon-block.type-2::before {
+  background-image: url('../../images/drclinics/help-icons/icon-2.png');
+}
+body.drc #slide-8 .help .illness-block .icon-block.type-3::before {
+  background-image: url('../../images/drclinics/help-icons/icon-3.png');
+}
+body.drc #slide-8 .help .illness-block .icon-block.type-4::before {
+  background-image: url('../../images/drclinics/help-icons/icon-4.png');
+}
+body.drc #slide-8 .help .illness-block .icon-block.type-5::before {
+  background-image: url('../../images/drclinics/help-icons/icon-5.png');
+}
+body.drc #slide-8 .help .illness-block .icon-block.type-6::before {
+  background-image: url('../../images/drclinics/help-icons/icon-6.png');
+}
+body.drc #slide-8 .help .illness-block .icon-block.type-7::before {
+  background-image: url('../../images/drclinics/help-icons/icon-7.png');
+}
+body.drc #slide-8 .help .illness-block .icon-block.type-8::before {
+  background-image: url('../../images/drclinics/help-icons/icon-8.png');
+}
+body.drc #slide-8 .help .illness-block .icon-block.type-9::before {
+  background-image: url('../../images/drclinics/help-icons/icon-9.png');
+}
+body.drc #slide-8 .help .illness-block .icon-block.type-10::before {
+  background-image: url('../../images/drclinics/help-icons/icon-10.png');
+}
+body.drc #slide-8 .help .illness-block .icon-block .description-overlay {
+  background: rgba(65, 144, 60, 0.9);
+}
+body.drc #slide-9 {
+  text-align: center;
+}
+body.drc #slide-9 .title {
+  text-align: center;
+  color: #000000;
+}
+body.drc #slide-9 .how-it-works {
+  margin: 50px 0;
+}
+body.drc #slide-9 .how-it-works .step {
+  width: 300px;
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+}
+body.drc #slide-9 .how-it-works .step::before {
+  display: block;
+  background: #f36f21;
+  position: relative;
+  -webkit-border-radius: 50% 50% 50% 50%;
+  -moz-border-radius: 50% 50% 50% 50%;
+  -o-border-radius: 50% 50% 50% 50%;
+  -khtml-border-radius: 50% 50% 50% 50%;
+  border-radius: 50% 50% 50% 50%;
+  behavior: url(../../css/PIE.htc);
+  color: #ffffff;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  font-size: 44px;
+  font-weight: normal;
+  padding-top: 20px;
+  margin: 0 auto 20px;
+}
+body.drc #slide-9 .how-it-works .step.s1::before {
+  content: "1";
+}
+body.drc #slide-9 .how-it-works .step.s2::before {
+  content: "2";
+}
+body.drc #slide-9 .how-it-works .step.s3::before {
+  content: "3";
+}
+body.drc #slide-10 {
+  background: #2d3a62;
+}
+body.drc .mobile-app {
+  padding: 60px 0;
+  font-size: 34px;
+}
+body.drc .mobile-app .text {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: normal;
+  width: 500px;
+  margin-right: 20px;
+}
+body.drc .mobile-app .text strong {
+  color: #f36f21;
+  display: block;
+}
+body.drc .mobile-app .slide-image {
+  display: inline-block;
+  vertical-align: middle;
+  background: url('../../images/drclinics/mobile-slide.jpg') no-repeat;
+  background-size: contain;
+  width: 535px;
+  height: 358px;
+}
+body.drc .mobile-app .app-links {
+  margin-top: 80px;
+}
+body.drc .mobile-app .app-links > * {
+  display: inline-block;
+}
+body.drc .mobile-app .app-links .label-text {
+  display: block;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+body.drc .mobile-app .app-links .appstore {
+  background: url('../../images/default/appstore-download.png') no-repeat;
+  background-size: contain;
+  width: 141px;
+  height: 43px;
+}
+body.drc .mobile-app .app-links .googleplay {
+  background: url('../../images/default/googleplay-download.png') no-repeat;
+  background-size: contain;
+  width: 141px;
+  height: 43px;
+}
+body.drc #aboutWrapper .line {
+  background: #f36f21;
+}
+body.drc #aboutWrapper .about-info-video::after {
+  background: url('../../images/drclinics/video_mask.png') repeat;
+}
+body.drc #aboutWrapper .service-conditions {
+  border-bottom: 1px dotted #41903c;
+}
+body.drc #aboutWrapper .service-conditions li .icon.img-1 {
+  background-image: url('../../images/drclinics/mobile-device.svg');
+}
+body.drc #aboutWrapper .service-conditions li .icon.img-2 {
+  background-image: url('../../images/drclinics/time.svg');
+}
+body.drc #aboutWrapper .service-conditions li .icon.img-3 {
+  background-image: url('../../images/drclinics/pig.png');
+  width: 90px;
+  height: 84px;
+  margin-top: -23px;
+}
+body.drc #aboutWrapper .consultations {
+  background: rgba(207, 207, 207, 0.5);
+}
+body.drc #aboutWrapper .instructions {
+  border-top: 1px solid #41903c;
+  border-bottom: 1px solid #41903c;
+}
+body.drc #aboutWrapper .instructions .nav-tabs li {
+  background: #41903c;
+  color: #ffffff;
+  border-color: #41903c;
+}
+body.drc #aboutWrapper .instructions .nav-tabs li.active {
+  background: #ffffff;
+  color: #41903c;
+}
+body.drc #aboutWrapper .instructions .steps li.next-arrow {
+  background: url('../../images/drclinics/arrows/next-arrow.png') no-repeat;
+}
+body.drc #aboutWrapper .instructions .steps li.step::before {
+  background: #f36f21;
+}
+body.drc #aboutWrapper .instructions .buttons-wrapper {
+  text-align: center;
+  margin-top: 30px;
+}
+body.drc #aboutWrapper .guide h2.title {
+  color: #41903c;
+}
+header {
+  min-width: 1204px;
+}
+header #logo {
+  background: url('../../images/drclinics/logo.png') no-repeat;
+  width: 143px;
+  height: 54px;
+}
+header #top-menu > li {
+  color: #000000;
+}
+header #top-menu > li.active,
+header #top-menu > li:hover {
+  color: #41903c;
+}
+header #top-menu > li a {
+  font-weight: bold;
+}
+header .logged-navigation {
+  background: #c4d82e;
+  height: 30px;
+  margin: 0;
+  overflow: hidden;
+  border: 0;
+}
+header .logged-navigation .nav-menu li {
+  color: #ffffff;
+  font-weight: bold;
+  margin-right: 30px;
+  line-height: 28px;
+}
+header .logged-navigation .nav-menu li.active,
+header .logged-navigation .nav-menu li:hover {
+  color: #000000;
+}
+header .logged-navigation .nav-menu li.history span {
+  background: #f36f21;
+  padding: 2px 7px;
+}
+header .logged-navigation .user-balance-wrapper {
+  background: #41903c;
+  height: 30px;
+}
+header .logged-navigation .user-balance-wrapper .balance-value {
+  line-height: 32px;
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+header .user-profile ul {
+  top: 60px;
+}
+header .user-profile ul li:hover {
+  color: #41903c;
+}
+header .user-profile .username-wrapper .username {
+  color: #000000;
+  border-bottom: 1px dashed #000000;
+}
+header #login-form .login::before {
+  background: url('../../images/drclinics/enter_icon.png') no-repeat;
+}
+.title-wrapper h1.page-title,
+.title-wrapper h1.title {
+  color: #41903c;
+}
+body.pacient a {
+  color: #41903c;
+}
+body.drc .modal .modal-dialog .modal-content .modal-header .modal-title {
+  border-bottom: 3px solid #f36f21;
+}
+body.drc #confirmCreation .modal-header .creation-title {
+  border-bottom: 3px solid #f36f21;
+}
+body.drc #inputPromoModal .modal-header .creation-title {
+  border-bottom: 3px solid #f36f21;
+}
+body.drc .ext-input .error-wrapper .error-text {
+  background-color: #f36f21;
+}
+body.drc .calendar .calendar-body .ui-datepicker .ui-datepicker-calendar,
+body.drc .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-calendar {
+  border-top: 1px dotted #41903c;
+}
+body.drc .calendar .calendar-body .ui-datepicker .ui-datepicker-calendar::before,
+body.drc .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-calendar::before {
+  border-top: 1px dotted #41903c;
+}
+body.drc .calendar .calendar-body .ui-datepicker .ui-datepicker-calendar tbody .ui-state-default,
+body.drc .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-calendar tbody .ui-state-default {
+  color: #41903c;
+}
+body.drc .calendar .calendar-body .ui-datepicker .ui-datepicker-calendar td a.ui-state-active,
+body.drc .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-calendar td a.ui-state-active {
+  border-color: #41903c;
+}
+body.drc .calendar .calendar-body .ui-datepicker .ui-datepicker-header .ui-datepicker-prev,
+body.drc .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-header .ui-datepicker-prev,
+body.drc .calendar .calendar-body .ui-datepicker .ui-datepicker-header .ui-datepicker-next,
+body.drc .calendar-wrapper .calendar-body .ui-datepicker .ui-datepicker-header .ui-datepicker-next {
+  background-image: url('../../images/drclinics/arrows/green-arrow.png');
+}
+body.drc .dayDetailed .header {
+  border-bottom: 1px dotted #41903c;
+}
+body.drc .dayDetailed .hoursDiv {
+  text-align: center;
+}
+body.drc .dayDetailed .hoursDiv .period {
+  border-bottom-color: #41903c;
+  text-align: center;
+}
+body.drc .dayDetailed .hoursDiv .period.hasConsult.doctBusy .tick {
+  color: #41903c;
+}
+body.drc .dayDetailed .hoursDiv .period .time.dash,
+body.drc .dayDetailed .hoursDiv .period .time.finish {
+  display: none;
+}
+body.drc #contactPageWrapper .leave-feedback-wrapper .intro .ext-input .input-wrapper input[type="text"],
+body.drc #contactPageWrapper .leave-feedback-wrapper .intro .ext-input .input-wrapper textarea {
+  border: 1px solid #41903c;
+}
+body.drc #contactPageWrapper .leave-feedback-wrapper .buttons-wrapper .button-style.send {
+  background: #41903c;
+}
+body.drc #contactPageWrapper .leave-feedback-wrapper .buttons-wrapper .button-style.send:hover {
+  background-color: rgba(65, 144, 60, 0.8);
+}
+body.drc #confirmRequestPostponeModal .modal-header .creation-title {
+  border-bottom: 3px solid #f36f21;
+}
+body.drc #balancePageWrapper .balance-wrapper .buttons-wrapper a.open-transactions,
+body.drc #balancePageWrapper .balance-wrapper .buttons-wrapper a.open-transactions:hover {
+  color: #f36f21;
+}
+body.drc #balancePageWrapper #refillBalanceForm ul.refill-types-wrapper li.refill-type .text {
+  color: #f36f21;
+}
+body.drc #historyWrapper .history-item-wrapper {
+  border-bottom-color: #41903c;
+}
+body.drc #historyWrapper .history-item-wrapper .doctor-info .about-doctor .line {
+  background: #f36f21;
+}
+body.drc #historyWrapper .history-item-wrapper .doctor-info .about-doctor .name:hover {
+  color: #41903c;
+}
+body.drc #historyWrapper .history-item-wrapper .consult-info .consult-date::before {
+  background: url('../../images/drclinics/calendar-icon.png') no-repeat;
+}
+body.drc #historyWrapper [class$="-consults"]:not(:last-child)::after {
+  background: #41903c;
+}
+body.drc #confirmRequestCreationModal .modal-header .creation-title {
+  border-bottom-color: #f36f21;
+}
+body.drc #certificateModal .modal-dialog .modal-content .modal-body #img-cont::before {
+  display: none;
+}
+body.drc #dashboard h2.title {
+  color: #41903c;
+}
+body.drc #dashboard .profile-doctors a:hover {
+  color: #41903c;
+}
+body.drc .line-styled {
+  background: #f36f21;
+}
+footer {
+  bottom: 0;
+  height: 142px;
+  left: 0;
+  min-width: 1204px;
+  position: absolute;
+  width: 100%;
+}
+footer.with-border::before {
+  background: #41903c;
+}
+footer .support .phone {
+  color: #41903c;
+}
+footer .social > div {
+  background-image: url("../../images/drclinics/social-buttons.png");
+}
